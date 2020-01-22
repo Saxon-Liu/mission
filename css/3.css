@@ -1,0 +1,92 @@
+/* 清除浏览器默认样式 */
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #68CDD5;
+    list-style: none;
+}
+
+/* 按钮容器 */
+.btn-return {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1px solid #407D81;
+    display: block;
+    position: relative;
+    margin:22px 0 0 35px ;
+}
+
+/* 箭头尖部 */
+.btn-return:before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid #407D81;
+    border-right: none;
+    border-top: none;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* 箭头尾部*/
+.btn-return:after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #407D81;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.main {
+    width:455px;
+    margin:42px auto 0;
+}
+
+.logo {
+    width:181px;
+    height:70px;
+    background-image:url(../img/3/logo.png);
+    margin:0 auto 118px;
+}
+P{
+    font-size: 24px;
+    color:#fff;
+}
+li{
+    float:left;
+    margin:0 50px;
+}
+.bottom-btn{
+    margin:177px 0 200px;
+}
+.left-img{
+    display:block;
+    width:84px;
+    height:84px;
+    background-image:url(../img/3/left.png);
+    
+}
+.right-img{
+    display:block;
+    width:84px;
+    height:84px;
+    background-image:url(../img/3/right.png);
+}
+/* 解决高度塌陷和外边框重叠 */
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
