@@ -1,24 +1,46 @@
 /* 清除浏览器默认样式 */
 * {
-    padding: 0;
     margin: 0;
-    background-color: #68CDD5;
+    padding: 0;
+    text-decoration: none;
     list-style: none;
 }
 
-/* 通过css实现返回按钮 按钮容器 */
+html {
+    /* 保险起见设置根字体大小 */
+    font-size: 16px;
+    /* 1 rem=10 px*/
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #68cdd5;
+}
+
+/* 返回键 */
 /* .btn-return {
+    display: block;
+    width: 5.4rem;
+    height: 5.4rem;
+    margin: 2.1rem 0 0 3.5rem;
+    ;
+    background: url(../img/3/task3_03.png);
+
+} */
+
+/* 通过css实现返回按钮 按钮容器 */
+.btn-return {
     width: 54px;
     height: 54px;
     border-radius: 50%;
     border: 1px solid #407D81;
     display: block;
     position: relative;
-    margin:22px 0 0 35px ; 
-}*/
+    margin: 22px 0 0 35px;
+}
 
 /* 箭头尖部 */
-/* .btn-return:before {
+.btn-return:before {
     content: "";
     width: 14px;
     height: 14px;
@@ -33,9 +55,9 @@
     right: 0;
     margin: auto;
 }
- */
+
 /* 箭头尾部*/
-/* .btn-return:after {
+.btn-return:after {
     content: "";
     width: 20px;
     height: 2px;
@@ -46,83 +68,86 @@
     left: 0;
     right: 0;
     margin: auto;
-} */
-
-/* 返回按钮 */
-.btn-return{
-    width:54px;
-    height:54px;
-    /* 通过背景图片显示 */
-    background-image: url(/img/3/task3_03.png);
-    /* 转换为块元素 */
-    display: block;
-    margin:22px 0 0 35px;
-    /* border:2px solid ; */
 }
 
-/* 设置主体部分宽度 */
+/* 主体部分 */
 .main {
-    width:455px;
-    /* 左右居中 */
-    margin:42px auto 0;
     /* border:2px solid; */
+    min-width: 26rem;
+    max-width: 100rem;
+   /* >992px大屏 */
+    margin: 0 auto;
 }
 
-.main img{
-    /* 居中 */
-    margin:0 auto 118px;
+/* logo部分 */
+.logo {
     display: block;
-}
-
-P{
-    font-size: 24px;
-    color:#fff;
-    /* 增加左外边距 */
-    padding-left:10px;
     /* border:2px solid; */
+    width: 18.1rem;
+    height: 7rem;
+    margin: 4rem auto 6rem;
+    background-image: url(../img/3/logo.png);
+    /* 图片固定大小 */
+    background-size: 18.1rem 7rem;
+    /* border: 2px solid red; */
+}
+/* 中等尺寸屏幕 平板 电脑*/
+@media(min-width:768px) and (max-width:991px) {
+    .main{
+        margin:0 8%;
+    }
+    .logo {
+       /* 二倍图 */
+        background-image: url(../img/3/logo_@2x.png);
+        /* border: 2px solid green; */
+    }
+}
+/* 小尺寸屏幕，手机 */
+@media(max-width:767px) {
+    .main{
+        margin:0 8%;
+    }
+    .logo {
+       /* 三倍图 */
+        background-image: url(../img/3/logo_@3x.png);
+        /* border: 2px solid blue; */
+    }
 }
 
-.bottom-btn{
-    margin-top:177px;
-    /* border:2px solid; */
-}
-li{
-    float:left;
-    /* border: 2px solid; */
-}
-.btn-l{
-    margin: 0 100px 0 90px;
-}
-.btn-r{
-    margin:0 80px 0 0;
-
-}
-.left-img{
-    display:block;
-    width:84px;
-    height:84px;
-    background-image:url(../img/3/task3_11.png);
-    
-}
-.right-img{
-    display:block;
-    width:84px;
-    height:84px;
-    background-image:url(../img/3/task3_14.png);
-}
-
-li div{
-    font-size:18px;;
+/* 文描部分 */
+.content {
     color: #fff;
-    /* 图片与文字间距离 */
-    margin-top:14px;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    margin-bottom: 10rem;
+    text-align: justify;
+}
+
+/* 下侧两按钮外部容器 */
+.bottom-btn a {
+    display: block;
+    width: 8.4rem;
+    height: 8.4rem;
+    /* border:2px solid; */
+    margin: 0 auto;
+}
+
+/* 两按钮共同样式 */
+.btn {
+    display: inline-block;
+    width: 13rem;
+    text-align: center;
     /* border:2px solid; */
 }
 
-/* 解决高度塌陷和外边框重叠 */
-.clearfix::before,
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both; 
+/* 右侧按钮浮动 */
+.btn-r {
+    float: right;
+}
+
+/* 按钮下的文描 */
+.btn div {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 5.4rem;
 }
