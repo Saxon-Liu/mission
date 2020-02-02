@@ -4,14 +4,15 @@
     text-decoration: none;
     list-style: none;
     outline: none;
-    color:#fff;
-    border:none;
+    color: #fff;
+    border: none;
 }
 
 html {
     font-size: 16px;
     font-size: 62.5%;
     background: rgb(239, 240, 244);
+    /* 设置 */
     min-width: 250px;
 }
 
@@ -20,23 +21,35 @@ header {
     background-color: #5cc0cd;
     margin-bottom: 0.9rem;
 }
-.topbar{
-    height:4.4rem;
-    font-size:1.6rem;
-    line-height:1.6rem;
-    position:relative;
+
+/* 容器定高撑开header */
+.topbar {
+    height: 4.4rem;
+    font-size: 1.6rem;
+    /* 设置行高等于字体高度，方便定位 */
+    line-height: 1.6rem;
+    /* 开启相对定位 */
+    position: relative;
 }
-.topbar li{
-    position:absolute;
-    top:1.4rem;
+
+/* 设置三个li的共有样式 */
+.topbar li {
+    position: absolute;
+    top: 1.4rem;
 }
-.middle{
-    left:50%;
-    font-size:1.8rem;;
-    margin-left:-1.8rem;
+
+.middle {
+    /* 找到中心位置 */
+    left: 50%;
+    font-size: 1.8rem;
+    ;
+    /* 向左偏移至中心位置 */
+    margin-left: -1.8rem;
 }
-.right{
-    right:0;
+
+.right {
+    /* 右对齐 */
+    right: 0;
 }
 
 /* 使用flex弹性盒完成顶部*/
@@ -60,7 +73,7 @@ li a {
 .middle {
     font-size: 1.8rem;
 } */
-
+/* 外部容器开启相对定位方便img定位 */
 .wrapper {
     position: relative;
 }
@@ -71,6 +84,7 @@ li a {
     left: 2.1rem;
 }
 
+/* 用伪类::before完成竖线 */
 .wrapper::before {
     content: '';
     position: absolute;
@@ -81,37 +95,41 @@ li a {
     left: 5.8rem;
 }
 
+/* 设置输入框样式 */
 input {
     display: block;
     width: 100%;
     height: 5rem;
     margin: 0.7rem auto;
     font-size: 1.6rem;
-}
-
-input[type^=text] {
+    /* 为小图标腾出位置 */
     padding-left: 7.5rem;
+    /* 抵消padding-left的过宽副作用 */
     box-sizing: border-box;
-    color:#000;
+    color: #000;
 }
 
 input::placeholder {
     color: #e9eced;
 }
+
 /*使用input submit作为按钮 */
 /* .submit {
     margin-top: 4rem;
     background-color: #5cc0cd;
 } */
-.sbumit{
-    font-size:1.8rem;
-    margin-top:4rem;
-    background-color:#5cc0cd;
-    height:5rem;
-    width:100%;
+/* 登录按钮样式 */
+.sbumit {
+    height: 5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    background-color: #5cc0cd;
 }
+
+/* 忘记密码样式 */
 .forget a {
-    font-size: rem;
+    font-size: 1.6rem;
     float: right;
     color: #5cc0cd;
     margin: 1.6rem;
