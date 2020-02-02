@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    color:#fff;
+    border:none;
+}
+
+html {
+    font-size: 16px;
+    font-size: 62.5%;
+    background: rgb(239, 240, 244);
+    min-width: 250px;
+}
+
+header {
+    padding: 0 2.5rem 0;
+    background-color: #5cc0cd;
+    margin-bottom: 0.9rem;
+}
+.topbar{
+    height:4.4rem;
+    font-size:1.6rem;
+    line-height:1.6rem;
+    position:relative;
+}
+.topbar li{
+    position:absolute;
+    top:1.4rem;
+}
+.middle{
+    left:50%;
+    font-size:1.8rem;;
+    margin-left:-1.8rem;
+}
+.right{
+    right:0;
+}
+
+/* 使用flex弹性盒完成顶部*/
+/* 
+.topbar {
+    height: 4.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+li a {
+    color: #fff;
+}
+
+.middle {
+    font-size: 1.8rem;
+} */
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper img {
+    position: absolute;
+    top: 1.6rem;
+    left: 2.1rem;
+}
+
+.wrapper::before {
+    content: '';
+    position: absolute;
+    width: 0.1rem;
+    height: 2.5rem;
+    background-color: #e9eced;
+    top: 1.3rem;
+    left: 5.8rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 5rem;
+    margin: 0.7rem auto;
+    font-size: 1.6rem;
+}
+
+input[type^=text] {
+    padding-left: 7.5rem;
+    box-sizing: border-box;
+    color:#000;
+}
+
+input::placeholder {
+    color: #e9eced;
+}
+/*使用input submit作为按钮 */
+/* .submit {
+    margin-top: 4rem;
+    background-color: #5cc0cd;
+} */
+.sbumit{
+    font-size:1.8rem;
+    margin-top:4rem;
+    background-color:#5cc0cd;
+    height:5rem;
+    width:100%;
+}
+.forget a {
+    font-size: rem;
+    float: right;
+    color: #5cc0cd;
+    margin: 1.6rem;
+}
