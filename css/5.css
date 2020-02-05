@@ -94,9 +94,13 @@ header p {
     font-size: 1.2rem;
 }
 
-.profile_local img {
-    margin-right: 1rem;
+/* 图标字体颜色代替图片 */
+.profile_local i{
+    color:#5fc0cd;
 }
+/* .profile_local img {
+    margin-right: 1rem;
+} */
 
 
 footer {
@@ -179,11 +183,14 @@ main {
     margin-left: 1.5rem;
     padding-left: 1.5rem;
 }
-
-/* 五角星外边距 */
-.skills_items img {
-    margin-right: 5px;
+/* 图标字体代替图片 */
+.skills_items i{
+    color:red;
 }
+/* 五角星外边距 */
+/* .skills_items img {
+    margin-right: 5px;
+} */
 
 /* 最后一行容器 转换为弹性盒 */
 .skills_introduct {
