@@ -76,7 +76,7 @@ body {
     /* border:2px solid; */
     min-width: 26rem;
     max-width: 100rem;
-    border: 1px solid;
+    /* border: 1px solid; */
     /* >992px大屏 */
     margin: 0 auto;
 }
@@ -88,12 +88,38 @@ body {
     width: 18.1rem;
     height: 7rem;
     margin: 4rem auto 6rem;
+    /* >992px大屏 */
     background-image: url(../img/task3/logo.png);
     /* 图片固定大小 */
     background-size: 18.1rem 7rem;
     /* border: 2px solid red; */
 }
 
+/* 中等尺寸屏幕 平板 电脑*/
+@media(min-width:768px) and (max-width:991px) {
+    .main {
+        margin: 0 8%;
+    }
+
+    .logo {
+        /* 二倍图 */
+        background-image: url(../img/task3/logo_@2x.png);
+        /* border: 2px solid green; */
+    }
+}
+
+/* 小尺寸屏幕，手机 */
+@media(max-width:767px) {
+    .main {
+        margin: 0 8%;
+    }
+
+    .logo {
+        /* 三倍图 */
+        background-image: url(../img/task3/logo_@3x.png);
+        /* border: 2px solid blue; */
+    }
+}
 
 /* 文描部分 */
 .content {
@@ -114,7 +140,7 @@ body {
     display: inline-block;
     width: 13rem;
     text-align: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* 按钮图片居中 */
@@ -122,7 +148,7 @@ body {
     display: block;
     width: 8.4rem;
     height: 8.4rem;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin: 0 auto;
 }
 
@@ -136,5 +162,5 @@ body {
     font-size: 2rem;
     color: #fff;
     line-height: 5.4rem;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
