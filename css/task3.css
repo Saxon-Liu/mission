@@ -30,44 +30,45 @@ body {
 
 /* 通过css实现返回按钮 按钮容器 */
 .btn-return {
+    position: relative;
+    display: block;
     width: 54px;
     height: 54px;
-    border-radius: 50%;
-    border: 1px solid #407D81;
-    display: block;
-    position: relative;
     margin: 22px 0 0 35px;
+    border: 1px solid #407D81;
+    border-radius: 50%;
 }
 
 /* 箭头尖部 */
 .btn-return:before {
-    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 14px;
     height: 14px;
+    margin: auto;
     border: 2px solid #407D81;
     border-right: none;
     border-top: none;
     transform: rotate(45deg);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    content: "";
+
 }
 
 /* 箭头尾部*/
 .btn-return:after {
-    content: "";
-    width: 20px;
-    height: 2px;
-    background-color: #407D81;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    width: 20px;
+    height: 2px;
     margin: auto;
+    background-color: #407D81;
+    content: "";
 }
 
 /* 主体部分 */
@@ -75,7 +76,8 @@ body {
     /* border:2px solid; */
     min-width: 26rem;
     max-width: 100rem;
-   /* >992px大屏 */
+    border: 1px solid;
+    /* >992px大屏 */
     margin: 0 auto;
 }
 
@@ -86,58 +88,42 @@ body {
     width: 18.1rem;
     height: 7rem;
     margin: 4rem auto 6rem;
-    background-image: url(../img/3/logo.png);
+    background-image: url(../img/task3/logo.png);
     /* 图片固定大小 */
     background-size: 18.1rem 7rem;
     /* border: 2px solid red; */
 }
-/* 中等尺寸屏幕 平板 电脑*/
-@media(min-width:768px) and (max-width:991px) {
-    .main{
-        margin:0 8%;
-    }
-    .logo {
-       /* 二倍图 */
-        background-image: url(../img/3/logo_@2x.png);
-        /* border: 2px solid green; */
-    }
-}
-/* 小尺寸屏幕，手机 */
-@media(max-width:767px) {
-    .main{
-        margin:0 8%;
-    }
-    .logo {
-       /* 三倍图 */
-        background-image: url(../img/3/logo_@3x.png);
-        /* border: 2px solid blue; */
-    }
-}
+
 
 /* 文描部分 */
 .content {
-    color: #fff;
-    font-size: 2.4rem;
-    line-height: 4rem;
     margin-bottom: 10rem;
+    font-size: 2.4rem;
+    color: #fff;
+    /* 文本两端对齐 */
     text-align: justify;
+    line-height: 4rem;
+
 }
 
-/* 下侧两按钮外部容器 */
-.bottom-btn a {
-    display: block;
-    width: 8.4rem;
-    height: 8.4rem;
-    /* border:2px solid; */
-    margin: 0 auto;
-}
+
 
 /* 两按钮共同样式 */
 .btn {
+    /* 转化为行内块 */
     display: inline-block;
     width: 13rem;
     text-align: center;
-    /* border:2px solid; */
+    border: 1px solid red;
+}
+
+/* 按钮图片居中 */
+.btn a {
+    display: block;
+    width: 8.4rem;
+    height: 8.4rem;
+    border: 2px solid blue;
+    margin: 0 auto;
 }
 
 /* 右侧按钮浮动 */
@@ -150,4 +136,5 @@ body {
     font-size: 2rem;
     color: #fff;
     line-height: 5.4rem;
+    border: 1px solid;
 }
