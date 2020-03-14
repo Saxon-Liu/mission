@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+    font-size: 62.5%;
+}
+
+/* 头部 */
+header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6.8vh;
+    background-color: #5fc0cd;
+}
+
+/* 按键容器 */
+.btn-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 39.6vw;
+    height: 5.4vh;
+    background-color: #55a8b3;
+    border-radius: 0.7rem;
+}
+
+/* 共同样式 */
+.btn-top {
+    width: 50%;
+    height: 100%;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+/* 左侧找雇主 */
+.btn-top-l {
+    background-color: #55a8b3;
+    color: #fff;
+}
+
+/* 右侧找护工 */
+.btn-top-r {
+    background-color: #fff;
+}
+
+/* 定位图片 */
+.local {
+    position: absolute;
+    right: 3.4vw;
+    width: 3.4vh;
+    height: 3.4vh;
+}
+
+main {
+    position: absolute;
+    top: 6.8vh;
+    bottom: 7.8vh;
+    left: 0;
+    right: 0;
+}
+
+/* 下拉框外部容器 */
+.select-wrap {
+    width: 100%;
+    height: 6.2vh;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+/* 下拉框 */
+select {
+    width: 100%;
+    height: 100%;
+    /* border: none; */
+    outline: none;
+    color: #999;
+
+    font-size: 2.8rem;
+    /* select文本居中 */
+    text-align-last: center;
+    /* 移入鼠标变手 */
+    cursor: pointer;
+}
+
+/* 分割线 */
+.linear {
+    border-right: 1px solid;
+    border-image: linear-gradient(white, #e1e5e7, white)1 10 1;
+}
+
+/* 总列表 */
+.service-list {
+    width: 100%;
+    height: 79.2vh;
+    /* 自动滚条 */
+    overflow: auto;
+    line-height: 2.3vh;
+}
+
+/* 单条列表 */
+.list {
+    width: 100%;
+    height: 14vh;
+    padding: 0 5vw;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+/* 列表左侧 */
+.list-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon-2 {
+    display: inline-block;
+    width: 1.8vh;
+    height: 1.8vh;
+}
+
+.date {
+    padding-left: 3vh;
+}
+
+.icon-3 {
+    display: inline-block;
+    width: 1.4vh;
+    height: 1.8vh;
+}
+
+.font1 {
+    padding-left: 5px;
+    font-size: 1.8vh;
+    color: #999;
+    line-height: 3.6vh;
+}
+
+.font2 {
+    color: #333;
+    font-size: 1.8vh;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.font3 {
+    color: red;
+    font-size: 1.8vh;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.angle {
+    width: 1.5vh;
+    height: 1.5vh;
+    border-top: 0.3vh solid #5fc0cd;
+    border-right: 0.3vh solid #5fc0cd;
+    transform: rotate(45deg);
+}
+
+footer {
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    height: 7.8vh;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8fafb;
+    border-top: 1px solid #e1e5e7;
+    padding: 0 15vw;
+}
+
+/* 外容器共同样式 */
+.btn-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 8.4vw;
+    height: 6vh;
+}
+
+/* 图片外容器共同样式 */
+.bottom-img {
+    width: 3.3vh;
+    height: 3.3vh;
+}
+
+.btn-write {
+    width: 7.7vh;
+    height: 7.7vh;
+}
+
+.icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.color1 {
+    color: #5fc0cd;
+}
+
+.color2 {
+    color: #999;
+}

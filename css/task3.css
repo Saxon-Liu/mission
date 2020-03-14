@@ -32,10 +32,10 @@ body {
 .btn-return {
     position: relative;
     display: block;
-    width: 54px;
-    height: 54px;
-    margin: 22px 0 0 35px;
-    border: 1px solid #407D81;
+    width: 5.4rem;
+    height: 5.4rem;
+    margin: 2.2rem 0 0 3.5rem;
+    border: 0.1rem solid #407D81;
     border-radius: 50%;
 }
 
@@ -46,10 +46,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 14px;
-    height: 14px;
+    width: 1.4rem;
+    height: 1.4rem;
     margin: auto;
-    border: 2px solid #407D81;
+    border: 0.2rem solid #407D81;
     border-right: none;
     border-top: none;
     transform: rotate(45deg);
@@ -64,8 +64,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 20px;
-    height: 2px;
+    width: 2rem;
+    height: 0.2rem;
     margin: auto;
     background-color: #407D81;
     content: "";
@@ -132,7 +132,13 @@ body {
 
 }
 
-
+.bottom-btn {
+    width:100%;
+    padding:0;
+    margin:0;
+    list-style: none;
+    /* border:1px solid; */
+}
 
 /* 两按钮共同样式 */
 .btn {
@@ -145,11 +151,12 @@ body {
 
 /* 按钮图片居中 */
 .btn a {
-    display: block;
+    display:block;
     width: 8.4rem;
     height: 8.4rem;
-    /* border: 2px solid blue; */
     margin: 0 auto;
+    /* border: 1px solid blue; */
+    
 }
 
 /* 右侧按钮浮动 */
