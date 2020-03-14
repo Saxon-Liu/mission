@@ -82,7 +82,7 @@ select {
     /* border: none; */
     outline: none;
     color: #999;
-
+    background-color: #fff;
     font-size: 2.8rem;
     /* select文本居中 */
     text-align-last: center;
