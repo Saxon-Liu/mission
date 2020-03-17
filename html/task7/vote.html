@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/task7.css">
+    <title>投票</title>
+</head>
+
+<body>
+    <header>
+        <div class="game-menu-wrap">
+            <div class="game-menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="game-menu-list">
+                <a href="#">分享</a>
+                <a href="#">设置</a>
+            </div>
+        </div>
+        <span class="game-title">投票</span>
+        <a href="#" onclick="quit()" class="btn-quit">
+            <span></span>
+        </a>
+    </header>
+    <div class="top-message">
+        <div class="top-message-items">
+            <span>发言讨论结束，大家请投票</span>
+            <audio id="audio1" src="../../audio/task7.mp3" controls="controls" hidden></audio>
+            <button class="top-message-audio" onclick="playPause()"></button>
+            <div class="caret-down"></div>
+        </div>
+        <span>点击得票数最多人的头像</span>
+    </div>
+
+    </div>
+    <div class="main-game scroll-hidden">
+        <div class="game-portrait-row">
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">水民</span>
+                    <span class="game-number">1号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">水民</span>
+                    <span class="game-number">2号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">警察</span>
+                    <span class="game-number">3号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+        </div>
+        <div class="game-portrait-row">
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">法官</span>
+                    <span class="game-number">4号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">狙击手</span>
+                    <span class="game-number">5号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">医生</span>
+                    <span class="game-number">6号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+        </div>
+        <div class="game-portrait-row">
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">杀手</span>
+                    <span class="game-number">7号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">水民</span>
+                    <span class="game-number">8号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">水民</span>
+                    <span class="game-number">9号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+        </div>
+        <div class="game-portrait-row">
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">水民</span>
+                    <span class="game-number">10号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">水民</span>
+                    <span class="game-number">11号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+            <div class="portrait-wrap ">
+                <div class="portrait">
+                    <span class="game-name">杀手</span>
+                    <span class="game-number">12号</span>
+                </div>
+                <div class="game-select-wrap">
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                    <button type="button" class="game-select-btn"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-vote-wrap">
+        <a href="result.html"><button type="button" class="btn-vote">投死</button></a>
+    </div>
+    <div ID="popup-quit">
+        <p>确定要结束游戏吗？</p>
+        <div class="quit-btn-wrap">
+            <button class="quit-btn bgcolor1" onclick="skipHome()">确定</button>
+            <button class="quit-btn bgcolor2" onclick="quitCancle()">取消</button>
+        </div>
+    </div>
+    <script>
+        var myAudio = document.getElementById('audio1')
+
+        function playPause() {
+            if (myAudio.paused) {
+                myAudio.play();
+            } else {
+                myAudio.pause();
+            }
+        }
+
+        var cancle = document.getElementById('popup-quit')
+
+        function quitCancle() {
+            cancle.style.display = "none";
+        }
+
+        function quit() {
+            cancle.style.display = "block";
+        }
+
+
+        function skipHome() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>
