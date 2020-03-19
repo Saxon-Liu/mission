@@ -176,7 +176,6 @@ main {
     /* 覆盖父元素的line-height值 */
     line-height: 3rem;
 }
-
 /* 红色文本样式 */
 .redtext {
     color: red;
