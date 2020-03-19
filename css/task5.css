@@ -5,8 +5,6 @@
     outline: 0;
     text-decoration: 0;
     list-style: none;
-
-
 }
 
 html {
@@ -112,20 +110,13 @@ main {
 /* 下部分外部容器 */
 .skills-wrap {
     font-size: 1.6rem;
+    overflow: hidden;
 }
 
 .skills-wrap>div {
+    width: 100%;
     border-bottom: 1px solid #e5eced;
     line-height: 5rem;
-}
-
-/* 分割竖线 */
-.splitline {
-    display: inline-block;
-    width: 0.2rem;
-    height: 2rem;
-    margin: 0 2rem;
-    background-color: #e5eced;
 }
 
 /* 第一行 */
@@ -140,39 +131,43 @@ main {
     position: absolute;
     top: 1.3rem;
     left: 1.5rem;
-    width: 0.2rem;
+    width: 0.4rem;
     height: 2rem;
     background-color: #5fc0cd;
     content: '';
 }
 
-/*  2~5行内外左边距*/
-.skills-items {
-    margin-left: 1.5rem;
-    padding-left: 1.5rem;
-}
 
 /* 图标字体代替图片 */
 .skills-items i {
     color: red;
 }
 
-/* 五角星外边距 */
-/* .skills-items img {
-    margin-right: 5px;
-} */
-
 /* 最后一行容器 转换为弹性盒 */
-.skills-introduct {
+.skills-items {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
     display: flex;
-    padding-left: 3rem;
+    padding-left: 1.5rem;
     /* 竖直居中 */
     align-items: center;
 }
 
 /* 左边块 */
-.introduction {
+.skills-items-thead {
     /* 不伸缩 */
+    flex-shrink: 0;
+    color: #999;
+}
+
+/* 分割竖线 */
+.splitline {
+    display: inline-block;
+    width: 0.2rem;
+    height: 2rem;
+    margin: 0 1rem;
+    background-color: #e5eced;
     flex-shrink: 0;
 }
 
@@ -186,8 +181,6 @@ main {
 .redtext {
     color: red;
 }
-
-
 
 footer {
     position: absolute;

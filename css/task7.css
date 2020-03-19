@@ -227,7 +227,7 @@ main {
     border-right: 3.4vh solid transparent;
 }
 
-/* ---------页面二-------------- */
+/* -----------------页面二---------------------- */
 .game-menu-wrap {
     position: absolute;
     left: 3vw;
@@ -367,7 +367,7 @@ main {
 .top-message-items::after {
     content: '';
     position: absolute;
-    bottom: -2vh;
+    bottom: -1.8vh;
     left: 8vw;
     display: block;
     width: 0;
