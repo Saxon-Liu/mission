@@ -6,6 +6,16 @@
     text-decoration: none;
 }
 
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 button {
     cursor: pointer;
 }
@@ -144,22 +154,14 @@ main {
     font-size: 3vh;
 }
 
-.list-wrap {
-    position: relative;
-    width: 72vw;
-    height: 63vh;
-    margin: 0 auto;
-    /* border: 1px solid blue; */
-}
-
 .game-list {
-    position: absolute;
-    width: 72vw;
-    height: 63vh;
-    /* border: 1px solid green; */
+    width: 89vw;
+    height: 65vh;
 }
 
-.game-list li {
+.list-group li {
+    width: 72vw;
+    margin: 0 auto;
     margin-top: 2.7vh;
 }
 
@@ -188,43 +190,40 @@ main {
     /* border: 1px solid; */
 }
 
-.gamelist-point {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 10vh;
-    height: 2.7vh;
-    margin: auto;
-}
-
-.pointer {
+.game-list-pointer li {
     width: 1.6vh;
     height: 1.6vh;
     background-color: #f0f0f0;
     border-radius: 50%;
+    opacity: 1;
 }
 
-.pointer-active,
-.pointer:hover {
+.game-list-pointer .active {
     background-color: #29bde0;
 }
 
-.btn-next {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    right: 0;
+.carousel-control-area {
+    width: 8.5vw;
+}
+
+.btn-pre {
     width: 0;
     height: 0;
-    margin: 33vh auto auto 37vw;
+    border-left: 3.4vh solid transparent;
+    border-top: 3.4vh solid transparent;
+    border-bottom: 3.4vh solid transparent;
+    border-right: 3.4vh solid #fbb435;
+    margin-right:1vw;
+}
+
+.btn-next {
+    width: 0;
+    height: 0;
     border-left: 3.4vh solid #fbb435;
     border-top: 3.4vh solid transparent;
     border-bottom: 3.4vh solid transparent;
     border-right: 3.4vh solid transparent;
+    margin-left:1vw;
 }
 
 /* -----------------页面二---------------------- */
@@ -407,8 +406,8 @@ main {
 }
 
 .portrait {
-    width: 12.7vh;
-    height: 12.7vh;
+    width: 11.9vh;
+    height: 11.9vh;
     border: 0.4vh solid #fff;
     text-align: center;
 }
@@ -509,7 +508,6 @@ main {
 
 #popup-quit p {
     font-size: 4vh;
-    ;
     line-height: 17vh;
 }
 
