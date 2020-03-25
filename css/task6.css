@@ -53,15 +53,13 @@ input[type="radio"] {
     margin: 0;
     padding: 0;
     font-size: 2rem;
-    color: #fff;
     line-height: 5.4vh;
     text-align: center;
     transition: color 1s;
     z-index: 99;
 }
-
-.toptab-left {
-    color: #fff;
+.toptab-wrap span{
+    color:#fff;
 }
 
 .toptab-wrap::before {
@@ -72,12 +70,12 @@ input[type="radio"] {
     height: 100%;
     background-color: #fff;
     border-radius: 0.7rem;
-    transition: right 0.5s;
+    transition: all 0.5s;
     z-index: 9;
 }
 
-#toptab-right:checked~.toptab-wrap>.toptab-right,
-#toptab-left:checked~.toptab-wrap>.toptab-left {
+#toptab-right:checked~.toptab-wrap>.toptab-right>span,
+#toptab-left:checked~.toptab-wrap>.toptab-left>span {
     color: #5fc0cd;
 }
 
