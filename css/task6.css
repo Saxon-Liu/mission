@@ -60,6 +60,10 @@ input[type="radio"] {
     z-index: 99;
 }
 
+.toptab-left {
+    color: #fff;
+}
+
 .toptab-wrap::before {
     content: '';
     position: absolute;
