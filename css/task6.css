@@ -12,64 +12,94 @@ html {
 
 /* 头部 */
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 6.8vh;
     background-color: #5fc0cd;
 }
 
-/* 按键容器 */
-.btn-wrap {
-    display: flex;
-    flex-direction: row;
-    width: 39.6vw;
-    height: 5.4vh;
-    background-color: #55a8b3;
-    border-radius: 0.7rem;
-}
-
-/* 共同样式 */
-.btn-top {
-    width: 50%;
-    height: 100%;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-}
-
-/* 左侧找雇主 */
-.btn-top-l {
-    background-color: #55a8b3;
-    color: #fff;
-}
-
-/* 右侧找护工 */
-.btn-top-r {
-    background-color: #fff;
-}
-
 /* 定位图片 */
 .local {
     position: absolute;
+    top: 1.7vh;
     right: 3.4vw;
     width: 3.4vh;
     height: 3.4vh;
 }
 
-main {
+
+input[type="radio"] {
+    display: none;
+}
+
+.toptab-wrap {
+    position: fixed;
+    top: 0.7vh;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 39.6vw;
+    height: 5.4vh;
+    background-color: #55a8b3;
+    border-radius: 0.7rem;
+    transform: translateX(-50%);
+}
+
+.toptab-wrap label {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 5.4vh;
+    text-align: center;
+    transition: color 1s;
+    z-index: 99;
+}
+
+.toptab-wrap::before {
+    content: '';
     position: absolute;
-    top: 6.8vh;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    transition: right 0.5s;
+    z-index: 9;
+}
+
+#toptab-right:checked~.toptab-wrap>.toptab-right,
+#toptab-left:checked~.toptab-wrap>.toptab-left {
+    color: #5fc0cd;
+}
+
+#toptab-left:checked~.toptab-wrap::before {
+    right: 50%;
+}
+
+#toptab-left:checked~main {
+    transform: translateX(-50%);
+}
+
+main {
+    position: fixed;
+    top: 13vh;
     bottom: 7.8vh;
     left: 0;
     right: 0;
+    display: flex;
+    width: 200%;
+    transition: all 0.5s;
 }
 
 /* 下拉框外部容器 */
 .select-wrap {
+    position: fixed;
+    top: 6.8vh;
     width: 100%;
     height: 6.2vh;
     border-bottom: 1px solid #e1e5e7;
@@ -83,7 +113,7 @@ select {
     outline: none;
     color: #999;
     background-color: #fff;
-    font-size: 2.8rem;
+    font-size: 2rem;
     /* select文本居中 */
     text-align-last: center;
     /* 移入鼠标变手 */
@@ -98,7 +128,7 @@ select {
 
 /* 总列表 */
 .service-list {
-    width: 100%;
+    width: 50%;
     height: 79.2vh;
     /* 自动滚条 */
     overflow: auto;
@@ -172,7 +202,7 @@ select {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
     height: 7.8vh;

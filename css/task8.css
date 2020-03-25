@@ -166,7 +166,7 @@ main {
     background-color: #fafafa;
 }
 
-main h3 {
+.main-items-wrap h3 {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 8rem;
@@ -273,10 +273,6 @@ div.main-item01-inner-wrap:last-child {
     border-bottom: none;
     border-radius: 50%;
     box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, .2);
-}
-
-.abc {
-    overflow: hidden;
 }
 
 .pointer-banner2 .active {
@@ -446,3 +442,172 @@ footer h3 {
 }
 
 /* ------- ----------页面二 ---------  ------------ */
+.coop-list-tab span {
+    position: relative;
+    font-size: 1.5rem;
+    color: #32c086;
+}
+
+#coop-list a.active span,
+.coop-list-tab span:hover {
+    color: #ff650e;
+}
+
+.coop-list-tab span::before {
+    content: '';
+    position: absolute;
+    top: 0.3rem;
+    left: -2rem;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    border: 0.15rem solid #ff650e;
+    border-radius: 50%;
+}
+
+#coop-list a.active span::before,
+.coop-list-tab span:hover:before {
+    background-color: #f9a372;
+}
+
+.coop-list-wrap h3 {
+    color: #333;
+    text-align: center;
+    line-height: 6rem;
+    font-weight: bold;
+    border-bottom: 0.1rem solid #e6e6e6;
+}
+
+.coop-list-introduction {
+    background-color: #fff;
+}
+
+.introduction-content-header {
+    font-size: 1.4rem;
+    border-bottom: 0.1rem solid #e6e6e6;
+}
+
+
+.introduction-content-wrap p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    color: #999;
+    line-height: 3rem;
+    padding: 0 15px;
+}
+
+.breadcrumb {
+    background-color: #fafafa;
+    line-height: 4rem;
+    font-size: 2rem;
+}
+
+.breadcrumb-item.active {
+    color: #32c086;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    /* display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d; */
+}
+
+/* ---------- pc端  ------------- */
+@media screen and (min-width:768px) {
+    .main-coop-list {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 auto 3rem auto;
+    }
+
+    .coop-list-wrap {
+        float: left;
+        width: 25rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
+    }
+
+    .coop-list-tab {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -1rem;
+        width: 30rem;
+    }
+
+    .coop-list-tab a {
+        margin: 1rem 0;
+    }
+
+    .coop-list-introduction {
+        min-height: 70rem;
+        margin-left: 4rem;
+        border-radius: 0.5rem;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+    }
+
+    .introduction-content-header {
+        display: flex;
+        align-items: center;
+        padding: 0 5rem;
+    }
+
+    .introduction-content-header img {
+        margin-right: 3rem;
+    }
+
+    .introduction-content {
+        padding: 0 5rem;
+    }
+
+    .introduction-content p:last-child {
+        padding-bottom: 10rem;
+    }
+
+    .introduction-content-wrap {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .introduction-content-header {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* --- 移动端---- */
+@media screen and (max-width:767px) {
+    .coop-list-wrap {
+        width: 100%;
+        margin-top: 3rem;
+        background-color: #fff;
+        color: #32c086;
+        border-radius: 0.3rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .coop-list-tab {
+        margin-bottom: 2rem;
+    }
+
+    .coop-list-tab a {
+        padding-left: 4rem;
+    }
+
+    .coop-list-introduction {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 0.3rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .introduction-content-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
