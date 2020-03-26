@@ -36,10 +36,36 @@ header {
     line-height: 4rem;
 }
 
+.top-login {
+    float: right;
+    color: #999;
+    font-size: 1.6rem;
+    line-height: 4rem;
+}
+
+.top-login span {
+    color: #999;
+}
+.top-login a:hover{
+    color: #32c086;
+}
+.topbar-social a:first-child:hover:after{
+    content: '';
+    position: absolute;
+    top:2rem;
+    left: -3rem;
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    background: url(../img/task8/code.jpg) no-repeat;
+    background-size: 100%;
+    background-color: #29b078;
+    z-index: 99;
+}
 .topbar-social i {
     font-size: 2.5rem;
-    margin-left: 1.5rem;
-    height: 100%;
+    line-height: 4rem;
+    margin-right: 2rem;
 }
 
 /* ---- 导航条 ---- */
@@ -48,15 +74,21 @@ header {
         background-color: #29b078;
     }
 
-    .m-nav-wrap {
+    .topnav-header img {
+        float: left;
+        margin-top: 2rem;
+        height: 6rem;
+    }
+
+    .btn-menu {
         display: none;
     }
 
-    #top-nav {
+    #topnav {
         display: block;
     }
 
-    .top-nav {
+    .topnav {
         float: right;
         padding: 0;
         margin: 0;
@@ -65,7 +97,7 @@ header {
         color: #fff;
     }
 
-    .top-nav li {
+    .topnav li {
         float: left;
         height: 10rem;
         margin: 0 1rem;
@@ -73,17 +105,17 @@ header {
         line-height: 10rem;
     }
 
-    .top-nav li:last-child {
+    .topnav li:last-child {
         margin-right: -1rem;
     }
 
-    .top-nav a {
+    .topnav a {
         display: block;
         width: 100%;
         height: 100%;
     }
 
-    .top-nav li:hover,
+    .topnav li:hover,
     li.nav-active {
         border-bottom: 0.3rem solid #fff;
     }
@@ -92,8 +124,11 @@ header {
 
 /* ----- 移动端导航条 -------- */
 @media screen and (max-width:767px) {
-    .nav-wrap {
-        position: relative;
+
+    .topnav-header img {
+        float: left;
+        margin-top: 1rem;
+        height: 4rem;
     }
 
     .btn-menu {
@@ -119,18 +154,18 @@ header {
         outline: none;
     }
 
-    .top-nav {
+    .topnav {
         width: 100%;
         padding: 0;
         margin: 0;
     }
 
-    .m-nav-wrap {
+    .topnav-header {
         height: 6rem;
         background-color: #29b078;
     }
 
-    .top-nav li {
+    .topnav li {
         width: 100%;
         height: 5rem;
         text-align: center;
@@ -140,7 +175,7 @@ header {
         background-color: #29b078;
     }
 
-    .top-nav a {
+    .topnav a {
         display: block;
         width: 100%;
         height: 100%;
@@ -152,7 +187,7 @@ header {
         padding: 0;
     }
 
-    .top-nav li:hover,
+    .topnav li:hover,
     li.nav-active {
         background-color: #36c388;
         border: none;
