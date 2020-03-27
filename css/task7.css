@@ -209,7 +209,7 @@ main {
 .btn-pre {
     width: 0;
     height: 0;
-    border-left: 3.4vh solid transparent;
+    border-left: none;
     border-top: 3.4vh solid transparent;
     border-bottom: 3.4vh solid transparent;
     border-right: 3.4vh solid #fbb435;
@@ -222,7 +222,7 @@ main {
     border-left: 3.4vh solid #fbb435;
     border-top: 3.4vh solid transparent;
     border-bottom: 3.4vh solid transparent;
-    border-right: 3.4vh solid transparent;
+    border-right:none;
     margin-left:1vw;
 }
 
