@@ -195,6 +195,9 @@ header {
         background-color: #36c388;
         border: none;
     }
+    .topbar-social{
+        display: none;
+    }
 
 }
 
