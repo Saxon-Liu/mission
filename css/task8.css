@@ -535,12 +535,26 @@ footer h3 {
     background-color: #f9a372;
 }
 
+input[name="coop-list"] {
+    display: none;
+}
+
 .coop-list-wrap h3 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     color: #333;
     text-align: center;
     line-height: 6rem;
     font-weight: bold;
     border-bottom: 0.1rem solid #e6e6e6;
+}
+
+
+.coop-list-wrap label {
+    text-align: center;
+    width: 100%;
+    margin: 0;
 }
 
 .coop-list-introduction {
@@ -576,9 +590,6 @@ footer h3 {
 
 .breadcrumb-item+.breadcrumb-item::before {
     content: ">";
-    /* display: inline-block;
-    padding-right: .5rem;
-    color: #6c757d; */
 }
 
 /* ---------- pc端  ------------- */
@@ -596,7 +607,9 @@ footer h3 {
         border-radius: 0.5rem;
         box-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
     }
-
+    .coop-list-wrap label>h3>i{
+        display: none;
+    }
     .coop-list-tab {
         flex-direction: column;
         align-items: center;
@@ -647,22 +660,54 @@ footer h3 {
 
 /* --- 移动端---- */
 @media screen and (max-width:767px) {
+
     .coop-list-wrap {
         width: 100%;
         margin-top: 3rem;
+        margin-bottom: 3rem;
         background-color: #fff;
         color: #32c086;
         border-radius: 0.3rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
-    .coop-list-tab {
+    #coop-list {
+        height: 0;
+        text-align: center;
+        overflow: hidden;
+        transition: height 0.6s;
+    }
+
+    #coop-list a {
+        display: block;
+        width: 100%;
+        line-height: 3rem;
+    }
+
+    #coop-list-header:checked~#coop-list {
+        height: 40rem;
+    }
+
+    .coop-list-wrap h3>i:last-child {
+        display: none;
+    }
+
+    #coop-list-header:checked~label>h3>i:last-child {
+        display: inline-block;
+    }
+
+    #coop-list-header:checked~label>h3>i:first-child {
+        display: none;
+    }
+
+    /* --------------- */
+    /* .coop-list-tab {
         margin-bottom: 2rem;
     }
 
     .coop-list-tab a {
         padding-left: 4rem;
-    }
+    } */
 
     .coop-list-introduction {
         width: 100%;
@@ -844,17 +889,21 @@ td[colspan="4"] {
         display: none;
     }
 }
-@media screen and (max-width:991px){
-    .frontend-card{
-        width:48%;
+
+@media screen and (max-width:991px) {
+    .frontend-card {
+        width: 48%;
     }
-    .division-block{
+
+    .division-block {
         width: 4%;
     }
-    div.division-block:nth-child(4n){
+
+    div.division-block:nth-child(4n) {
         display: none;
     }
 }
+
 @media screen and (max-width:767px) {
     .frontend-card {
         width: 100%;
