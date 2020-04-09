@@ -195,7 +195,8 @@ header {
         background-color: #36c388;
         border: none;
     }
-    .topbar-social{
+
+    .topbar-social {
         display: none;
     }
 
@@ -609,9 +610,11 @@ input[name="coop-list"] {
         border-radius: 0.5rem;
         box-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
     }
-    .coop-list-wrap label>h3>i{
+
+    .coop-list-wrap label>h3>i {
         display: none;
     }
+
     .coop-list-tab {
         flex-direction: column;
         align-items: center;

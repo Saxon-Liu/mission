@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+  font-size: 16px;
+  font-size: 62.5%;
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 6px;
+  }
+}
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 9rem;
+  background-color: #5fc0cd;
+}
+header .local {
+  position: absolute;
+  top: 50%;
+  right: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: url(../img/task6/icon1.png) no-repeat;
+  background-size: 100% 100%;
+  transform: translateY(-50%);
+}
+/* #5fc0cd #af0ac0 #e1e5e7
+#f8fafb 
+*/
+.toptab-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30rem;
+  height: 7rem;
+  border-radius: 0.8rem;
+  background-color: #55a8b3;
+  transform: translate(-50%, -50%);
+}
+.toptab-wrap::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+  border-radius: 0.8rem;
+  transition: all 0.6s;
+}
+.toptab-wrap span {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 7rem;
+  font-size: 3.4rem;
+  transition: color 0.6s;
+  cursor: pointer;
+}
+.toptab-wrap .toptab-left span {
+  color: #fff;
+}
+.toptab-wrap .toptab-right span {
+  color: #5fc0cd;
+}
+#toptab-left:checked ~ header > .toptab-wrap:before {
+  right: 50%;
+}
+#toptab-left:checked ~ header .toptab-left > span {
+  color: #5fc0cd;
+}
+#toptab-left:checked ~ header .toptab-right > span {
+  color: #fff;
+}
+#toptab-left:checked ~ main {
+  left: -100%;
+}
+.select-wrap {
+  position: fixed;
+  top: 9rem;
+  height: 8rem;
+  width: 100%;
+  border-bottom: 1px solid #e1e5e7;
+}
+.select-wrap select {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  height: 100%;
+  background-color: transparent;
+  font-size: 2.8rem;
+  text-align-last: center;
+  color: #999;
+}
+.select-wrap .linear {
+  border-right: 1px solid;
+  border-image: linear-gradient(white, #e1e5e7, white) 1 10 1;
+}
+main {
+  display: flex;
+  position: fixed;
+  top: 17rem;
+  left: 0;
+  bottom: 10rem;
+  width: 200%;
+  overflow: auto;
+  transition: left 0.6s;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+.service-list {
+  width: 50%;
+}
+.service-list li > a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 18rem;
+  padding: 0 3rem;
+  border-bottom: 1px solid #e1e5e7;
+}
+.service-list li > a .list-items {
+  width: 50%;
+}
+.service-list li > a .list-items .icon {
+  float: left;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.service-list li > a .list-items > div {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.service-list li > a .list-items .icon-2 {
+  background-image: url(../img/task6/icon2.png);
+}
+.service-list li > a .list-items .icon-3 {
+  background-image: url(../img/task6/icon3.png);
+}
+.service-list li > a .list-items .font1 {
+  margin-left: 2rem;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  vertical-align: bottom;
+  color: #999;
+}
+.service-list li > a .list-items .font2 {
+  margin-left: 4.5rem;
+  font-size: 2.8rem;
+  line-height: 7rem;
+}
+.service-list li > a .price {
+  margin-left: auto;
+}
+.service-list li > a .price .font3 {
+  position: relative;
+  padding-right: 3rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: red;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.service-list li > a .price .font3::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 0.6rem;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid #5fc0cd;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(45deg) translateY(-50%);
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  border-top: 1px solid #e1e5e7;
+}
+footer .btn-center {
+  width: 9.5rem;
+  height: 9.5rem;
+  background: url(../img/task6/icon5.png) no-repeat;
+  background-size: 100% 100%;
+}
+footer .btn-bottom {
+  text-align: center;
+}
+footer .btn-bottom div {
+  width: 5rem;
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+footer .btn-bottom span {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+footer .bottom-left div {
+  background-image: url(../img/task6/icon4.png);
+}
+footer .bottom-left span {
+  color: #5fc0cd;
+}
+footer .bottom-right div {
+  background-image: url(../img/task6/icon6.png);
+}
+footer .bottom-right span {
+  color: #999;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
