@@ -1,0 +1,17 @@
+
+.box {
+    /* 开启左浮动 */
+    float: left;
+    /* 容器宽度 */
+    padding-left: 32%;
+    /* 容器高度 */
+    padding-top: 32%;
+    /* 外边距  */
+    margin-left:1%;
+    /* 外边距 */
+    margin-top:1.3%;
+    /* 圆角处理 */
+    border-radius: 5%;
+    /* 九宫格颜色 */
+    background-color: orange;
+}

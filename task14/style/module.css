@@ -1,0 +1,113 @@
+/* ================ css手动轮播图组件 =====================*/
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel .carousel-main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  transition: left 0.6s ease-in-out;
+}
+.carousel-indicators {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0.05rem;
+  left: 50%;
+  height: 0.3rem;
+  transform: translatex(-50%);
+  z-index: 999;
+}
+.carousel-indicators .pointer {
+  display: block;
+  width: 0.15rem;
+  height: 0.15rem;
+  margin: 0 0.05rem;
+  background-color: #999;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.6s;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.carousel-control {
+  height: 100%;
+}
+.carousel-control label {
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-top: 0.05rem solid #999;
+  border-right: 0.05rem solid #999;
+  transform-origin: center center;
+  transform: translateY(-50%);
+  opacity: 0.4;
+  z-index: 999;
+}
+.carousel-control label:hover {
+  opacity: 1;
+}
+.carousel-control label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 200%;
+  height: 1000%;
+  transform-origin: center;
+  transform: translateY(-50%) rotate(-45deg);
+  z-index: -1;
+}
+.carousel-control .btn-next {
+  right: 0.4rem;
+  transform: rotate(45deg);
+}
+.carousel-control .btn-pre {
+  left: 0.4rem;
+  transform: rotate(-135deg);
+}
+/*============== nav ================*/
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  height: 100%;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.2rem;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  color: #333;
+  content: ">";
+  padding: 0 0.1rem;
+}
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 0.05rem;
+  background-color: #47d197;
+}
+.menu-btn::before,
+.menu-btn::after {
+  content: "";
+  display: block;
+}
+.menu-btn span {
+  width: 60%;
+  height: 9%;
+  background-color: #308863;
+  border-radius: 0.05rem;
+}
+.menu-btn:hover {
+  opacity: 0.6;
+}
+/*# sourceMappingURL=./module.css.map */
