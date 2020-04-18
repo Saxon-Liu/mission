@@ -11,11 +11,12 @@
     <!-- 引入外部css文件 -->
     <link rel="stylesheet" href="./task1.css">
     <!-- 引入外部js文件 -->
-    <script type="text/javascript" src="task1.js"></script>
+    <script type="text/javascript" defer="true" src="task1.js"></script>
 </head>
 
 <body>
     <!-- 九宫格方块容器 -->
+    <div id="box1" class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
@@ -24,7 +25,8 @@
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
-    <div class="box"></div>
+    <button onclick="start()">开始闪</button>
+    <button onclick="stop()">结束闪</button>
 </body>
 
 </html>
