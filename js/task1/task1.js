@@ -18,6 +18,13 @@ function cancelColor() {
   colorArr = [];
   j = 0;
 }
+function changeColor() {
+  // 随机产生一个颜色
+  var r = Math.floor(Math.random() * 256);
+  var g = Math.floor(Math.random() * 256);
+  var b = Math.floor(Math.random() * 256);
+  var rgb = "rgb" + "(" + r + "," + g + "," + b + ")";
+}
 
 function change() {
   cancelColor();
@@ -25,25 +32,29 @@ function change() {
   for (var i = 0; i < 3; i++) {
     // 随机选取一个格子
     var num = Math.floor(Math.random() * 9);
-    // 判断是否重复
+    // 数组比对是否重复
     if (boxArr.indexOf(num) < 0) {
+      // 不重复 数值加入数组
       boxArr.push(num);
-      // 随机产生一个颜色
-      var r = Math.floor(Math.random() * 256);
-      var g = Math.floor(Math.random() * 256);
-      var b = Math.floor(Math.random() * 256);
-      var rgb = "rgb" + "(" + r + "," + g + "," + b + ")";
-      // 判断是否重复
-      if (colorArr.indexOf(rgb) < 0) {
-        // 未重复 加入数组
-        colorArr.push(rgb);
-        // 颜色赋值
-        box[num].style.backgroundColor = rgb;
-      } else {
-        //重复 重新生成颜色
-        return;
+      for (var j = 0; j < 3; j++) {
+        // 随机产生一个颜色
+        var r = Math.floor(Math.random() * 256);
+        var g = Math.floor(Math.random() * 256);
+        var b = Math.floor(Math.random() * 256);
+        var rgb = "rgb" + "(" + r + "," + g + "," + b + ")";
+        // 数组比对是否重复
+        if (colorArr.indexOf(rgb) < 0) {
+          // 未重复 加入数组
+          colorArr.push(rgb);
+          // 颜色赋值
+          box[num].style.backgroundColor = rgb;
+        } else {
+          // 重复 重新获取颜色
+          j--;
+        }
       }
     } else {
+      // 重复 重新获取随机数
       i--;
     }
   }
