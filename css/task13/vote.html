@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/vote.css">
+    <title>投票</title>
+</head>
+
+<body>
+    <input type="checkbox" id="popup_quit_btn">
+    <div class="popup_quit_wrap">
+        <div class="popup">
+            <div class="popup_header">
+                确定要结束游戏吗？
+            </div>
+            <div class="popup_body">
+                <a href="./index.html">
+                    <div class="btn bg_danger">确定</div>
+                </a>
+                <label for="popup_quit_btn">
+                    <div class="btn bg_normal">取消</div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <header class="l_header">
+        <label class="votemenu l_header_btn--l">
+            <input type="checkbox" id="votmenu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="votemenu_list">
+                <a href="#">声音</a>
+                <a href="#">帮助</a>
+                <a href="#">关于</a>
+            </div>
+        </label>
+        <span class="header_title">投票</span>
+        <label for="popup_quit_btn" class="l_header_btn--r vote_quit"><span></span></label>
+    </header>
+    <main class="l_main vote_main scroll_hidden">
+        <div class="top_msg">
+            <div class="top_msg_items">
+                <span>发言讨论结束，大家请投票</span>
+                <audio id="audio1" src="./audio/task7.mp3" controls="controls" hidden></audio>
+                <button class="top_msg_audio" onclick="playPause()"></button>
+            </div>
+            <span>点击得票数最多人的头像</span>
+        </div>
+        <div class="game_main">
+            <div class="game_portrait_row">
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="game_portrait_row">
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="game_portrait_row">
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="game_portrait_row">
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+                <div class="portrait_wrap ">
+                    <div class="portrait">
+                        <span class="portrait_name">水民</span>
+                        <span class="portrait_number">10号</span>
+                    </div>
+                    <div class="select_wrap">
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                        <button type="button" class="select_btn"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="vote_footer">
+        <a href="./result.html" class="vote_footer_btn">投死</a>
+    </div>
+
+    <!-- 音频暂停播放-->
+    <script>
+        var myAudio = document.getElementById('audio1')
+
+        function playPause() {
+            if (myAudio.paused) {
+                myAudio.play();
+            } else {
+                myAudio.pause();
+            }
+        }
+    </script>
+</body>
+
+</html>

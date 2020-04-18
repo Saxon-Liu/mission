@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<hade>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" ,initial-scale="1.0">
+    <link rel="stylesheet" href="../css/task4.css">
+    <title>登录页面</title>
+</hade>
+
+<body>
+    <header>
+        <!-- 外部容器 -->
+        <ul class="topbar">
+            <li class="left"><a href="#">关闭</a></li>
+            <li class="middle">登录</li>
+            <li class="right"><a href="#">注册</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- 设置表单 -->
+        <form class="register">
+           <!-- 外部容器方便定位 -->
+            <div class="wrapper">
+                <!-- 设置小图标并缩小大小 -->
+                <img src="../img/task4/iphone.png" width="13.5">
+                <!-- autocomplete关闭历史记录 -->
+                <input type="text" name="account" placeholder="请输入手机号" autocomplete="off">
+            </div>
+            <div class="wrapper">
+                <img src="../img/task4/locked.png" width="14.5">
+                <input type="text" name="password" placeholder="请输入密码" autocomplete="off">
+            </div>
+            <!-- <input type="submit" class="submit" value="登录"> -->
+            <!-- 登录按钮 -->
+            <button class="sbumit">登录</button>
+        </form>
+    </main>
+    <div class="forget"><a href="#">忘记密码?</a></div>
+</body>
+
+</html>

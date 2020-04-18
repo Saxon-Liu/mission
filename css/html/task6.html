@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/task6.css">
+    <title>护工列表页</title>
+</head>
+
+<body>
+    <header>
+        <div class="local"><img class="icon" src="../img/task6/icon1.png"></div>
+    </header>
+
+    <!-- 将input radio连接到label -->
+    <input id="toptab-left" type="radio" name="toptab">
+    <input id="toptab-right" checked="checked" type="radio" name="toptab">
+    <div class="toptab-wrap">
+        <label for="toptab-left" class="toptab-left">
+            <span>找雇主</span>
+        </label>
+        <label for="toptab-right" class="toptab-right">
+            <span>找护工</span>
+        </label>
+    </div>
+
+    <!-- select下拉框 -->
+    <div class="row no-gutters select-wrap">
+        <!-- col均分 -->
+        <select class="col linear">
+            <option>所在地</option>
+            <option>北京</option>
+            <option>上海</option>
+            <option>深圳</option>
+        </select>
+        <select class="col linear">
+            <option>食宿</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <select class="col">
+            <option>病人情况</option>
+            <option>能自理</option>
+            <option>不能自理</option>
+            <option>半失能</option>
+            <option>手术后</option>
+        </select>
+    </div>
+    <main>
+        <!-- 找护工列表 -->
+        <ul class="service-list list-01 scroll-hidden">
+            <!-- 一条列表信息 no-gutters去除row默认margin -->
+            <li class="list row no-gutters">
+                <!--左侧 网格布局 -->
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <!--右侧 网格布局 -->
+                <div class="price col-3 ml-auto">
+                    <span class="font3">25元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+            <li class="list row no-gutters">
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <div class="price col-3 ml-auto">
+                    <span class="font3">35元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+            <li class="list row no-gutters">
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <div class="price col-3 ml-auto">
+                    <span class="font3">25元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+            <li class="list row no-gutters">
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <div class="price col-3 ml-auto">
+                    <span class="font3">45元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+            <li class="list row no-gutters">
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <div class="price col-3 ml-auto">
+                    <span class="font3">45元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+            <li class="list row no-gutters">
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <div class="price col-3 ml-auto">
+                    <span class="font3">45元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+        </ul>
+        <!-- 找护工列表 -->
+        <ul class="service-list list-02 scroll-hidden">
+            <!-- 一条列表信息 no-gutters去除row默认margin -->
+            <li class="list row no-gutters">
+                <!--左侧 网格布局 -->
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <!--右侧 网格布局 -->
+                <div class="price col-3 ml-auto">
+                    <span class="font3">45元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+            <li class="list row no-gutters">
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <div class="price col-3 ml-auto">
+                    <span class="font3">45元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+            <li class="list row no-gutters">
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <div class="price col-3 ml-auto">
+                    <span class="font3">25元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+            <li class="list row no-gutters">
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <div class="price col-3 ml-auto">
+                    <span class="font3">45元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+            <li class="list row no-gutters">
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <div class="price col-3 ml-auto">
+                    <span class="font3">45元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+            <li class="list row no-gutters">
+                <div class="list-items col-6">
+                    <div class="list-head">
+                        <span class="icon-2"><img class="icon" src="../img/task6/icon2.png"></span>
+                        <span class="font1">服务日期</span>
+                    </div>
+                    <div class="date font2">2015-7-5 至 2015-7-12</div>
+                    <div class="address">
+                        <span class="icon-3"><img class="icon" src="../img/task6/icon3.png"></span>
+                        <span class="font1">北京·通州·果园</span>
+                    </div>
+                </div>
+                <div class="price col-3 ml-auto">
+                    <span class="font3">45元/小时</span>
+                    <div class="angle"></div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <!-- d-flex覆盖默认bootstrap默认样式 -->
+    <footer class="d-flex">
+        <div class="btn-bottom">
+            <div class="bottom-img"><img class="icon" src="../img/task6/icon4.png"></div>
+            <div class="color1">首页</div>
+        </div>
+        <div class="btn-write ">
+            <img class="icon" src="../img/task6/icon5.png">
+        </div>
+        <div class="btn-bottom">
+            <div class="bottom-img"><img class="icon" src="../img/task6/icon6.png"></div>
+            <div class="color2">我的</div>
+        </div>
+    </footer>
+</body>
+
+</html>

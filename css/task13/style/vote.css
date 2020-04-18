@@ -1,0 +1,353 @@
+@import "base/normalize.css";
+@import "base/reset.css";
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px;
+  }
+}
+@media screen and (min-width: 560px) {
+  html {
+    font-size: 87.5px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 112.5px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 117.1875px;
+  }
+}
+.l_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.9rem;
+  background-color: #29bde0;
+  text-align: center;
+}
+.l_header_btn--l {
+  position: absolute;
+  left: 0.2rem;
+  bottom: 0.2rem;
+}
+.l_header_btn--r {
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0.2rem;
+}
+.l_header .header_title {
+  color: #fff;
+  font-size: 0.34rem;
+  line-height: 0.9rem;
+}
+.l_main {
+  position: absolute;
+  top: 0.9rem;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+}
+.l_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.vote_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  height: 1.5rem;
+  background-color: #29bde0;
+}
+.result_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-around;
+  height: 1rem;
+  background-color: rgba(41, 189, 224, 0.5);
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.scroll_hidden::-webkit-scrollbar {
+  display: none;
+}
+.sprite1 {
+  background: url(../image/sprite1.png) no-repeat;
+  background-size: 1.8rem 1.5rem;
+}
+/*  弹窗 */
+.popup_quit_wrap {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.popup_quit_wrap .popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4.8rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 0.15rem;
+  transform: translate(-50%, -50%);
+}
+.popup_quit_wrap .popup_header {
+  font-size: 0.34rem;
+  text-align: center;
+}
+.popup_quit_wrap .popup_body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.popup_quit_wrap .popup_body .btn {
+  width: 1.8rem;
+  border: 0.01rem solid;
+  font-size: 0.34rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.9rem;
+  border-radius: 0.15rem;
+}
+.popup_quit_wrap .popup_body .btn.bg_danger {
+  background-color: #f66f6f;
+}
+.popup_quit_wrap .popup_body .btn.bg_normal {
+  background-color: #c6c6c6;
+}
+#popup_quit_btn:checked ~ .popup_quit_wrap {
+  visibility: initial;
+}
+.votemenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.2rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border: 0.02rem solid #fff;
+}
+.votemenu span {
+  width: 80%;
+  height: 11%;
+  background-color: #fff;
+}
+.votemenu .votemenu_list {
+  visibility: hidden;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  font-size: 0.2rem;
+  border: 0.01rem solid #999;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+.votemenu .votemenu_list a {
+  display: block;
+  width: 1rem;
+  line-height: 0.5rem;
+  color: #29bde0;
+  background-color: #fff;
+}
+.votemenu .votemenu_list a:hover {
+  color: rgba(41, 189, 224, 0.8);
+}
+#votmenu_btn:checked ~ .votemenu_list {
+  visibility: initial;
+}
+.vote_quit {
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0.2rem;
+  padding-top: 0.4rem;
+}
+.vote_quit span {
+  display: block;
+  width: 0.4rem;
+  height: 0.03rem;
+  background-color: #fff;
+  transform-origin: left bottom;
+  transform: rotate(-45deg);
+}
+.vote_quit span::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform-origin: center;
+  transform: rotate(90deg);
+}
+.top_msg {
+  width: 100%;
+}
+.top_msg_items {
+  position: relative;
+  padding-left: 0.5rem;
+  line-height: 0.8rem;
+  font-size: 0.26rem;
+  background-color: #b9e9f5;
+}
+.top_msg_items::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -0.14rem;
+  left: 0.6rem;
+  width: 0;
+  height: 0;
+  border-top: 0.15rem solid #b9e9f5;
+  border-left: 0.1rem solid transparent;
+  border-right: 0.1rem solid transparent;
+  border-bottom: none;
+}
+.top_msg_items .top_msg_audio {
+  position: absolute;
+  top: 50%;
+  right: 0.2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: none;
+  outline: none;
+  background: url(../image/sprite1.png) no-repeat;
+  background-size: 1.8rem 1.5rem;
+  background-position: -0.9rem -0.87rem;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.top_msg > span {
+  margin-left: 0.6rem;
+  font-size: 0.26rem;
+  color: #fff;
+  line-height: 1rem;
+}
+.vote_main {
+  position: absolute;
+  bottom: 1.5rem;
+  background-color: #29bde0;
+  overflow: auto;
+}
+.game_main .game_portrait_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 0.2rem;
+}
+.game_main .game_portrait_row .portrait {
+  display: flex;
+  flex-direction: column;
+  width: 1.35rem;
+  height: 1.35rem;
+  border: 0.04rem solid #fff;
+  text-align: center;
+}
+.game_main .game_portrait_row .portrait:hover {
+  border-color: #fbb435;
+}
+.game_main .game_portrait_row .portrait span::before {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+}
+.game_main .game_portrait_row .portrait_name {
+  height: 70%;
+  background-color: #f5c97b;
+  font-size: 0.3rem;
+}
+.game_main .game_portrait_row .portrait_number {
+  height: 30%;
+  background-color: #83b09a;
+  color: #fff;
+  font-size: 0.22rem;
+}
+.game_main .game_portrait_row .select_wrap {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+  width: 100%;
+}
+.game_main .game_portrait_row .select_wrap .select_btn {
+  width: 0.3rem;
+  height: 0.3rem;
+  background: url(../image/sprite1.png) no-repeat;
+  background-size: 1.8rem 1.5rem;
+}
+.game_main .game_portrait_row .select_wrap .select_btn:hover {
+  opacity: 0.8;
+}
+.game_main .game_portrait_row .select_wrap .select_btn:nth-child(1) {
+  background-position: 0 -0.45rem;
+}
+.game_main .game_portrait_row .select_wrap .select_btn:nth-child(2) {
+  background-position: -0.45rem -0.45rem;
+}
+.game_main .game_portrait_row .select_wrap .select_btn:nth-child(3) {
+  background-position: -0.9rem -0.45rem;
+}
+.game_main .game_portrait_row .select_wrap .select_btn:nth-child(4) {
+  background-position: -1.35rem -0.45rem;
+}
+.game_main .game_portrait_row .portrait_wrap:hover .select_wrap {
+  visibility: initial;
+}
+.vote_footer_btn {
+  width: 5rem;
+  height: 0.9rem;
+  background-color: #fbb435;
+  font-size: 0.4rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.9rem;
+}
+/*# sourceMappingURL=./vote.css.map */

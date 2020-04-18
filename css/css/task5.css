@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: 0;
+    list-style: none;
+}
+
+html {
+    min-width: 300px;
+    font-size: 16px;
+    font-size: 62.5%;
+}
+
+/* 头部容器 */
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4.4rem;
+    background-color: #5fc0cd;
+    font-size: 1.8rem;
+    color: #fff;
+    /* 字体上下居中*/
+    line-height: 4.4rem;
+}
+
+/* 用css完场返回键 */
+header a {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+header p {
+    position: absolute;
+    /* 定位页面中间位置 */
+    left: 50%;
+    /* 左偏移使文本对准页面中心 */
+    margin-left: -3.6rem;
+}
+
+main {
+    position: absolute;
+    top: 4.4rem;
+    bottom: 5rem;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+/* 上部分外部容器 */
+.profile-wrap {
+    width: 100%;
+    height: 16.3rem;
+    background: url(../img/task5/bgimg.png);
+    background-size: cover;
+}
+
+/* 头像个人信息容器 */
+.profile {
+    margin: 3.7rem 1.5rem;
+}
+
+/* 头像 */
+.profile-picture img {
+    float: left;
+}
+
+/* 个人信息容器 */
+.profile-info {
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+/* 姓名年龄容器 */
+.profile-info-items span {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    /* 文本上下居中 */
+    vertical-align: middle;
+}
+
+.profile-info-items span:last-child {
+    font-size: 1.4rem;
+}
+
+.profile-local {
+    font-size: 1.2rem;
+}
+
+/* 图标字体颜色代替图片 */
+.profile-local i {
+    color: #5fc0cd;
+}
+
+/* 下部分外部容器 */
+.skills-wrap {
+    font-size: 1.6rem;
+    overflow: hidden;
+}
+
+.skills-wrap>div {
+    width: 100%;
+    border-bottom: 1px solid #e5eced;
+    line-height: 5rem;
+}
+
+/* 第一行 */
+.skills-header {
+    position: relative;
+    padding-left: 3rem;
+    line-height: 5rem;
+}
+
+/* 蓝色竖线 */
+.skills-header::before {
+    position: absolute;
+    top: 1.3rem;
+    left: 1.5rem;
+    width: 0.4rem;
+    height: 2rem;
+    background-color: #5fc0cd;
+    content: '';
+}
+
+
+/* 图标字体代替图片 */
+.skills-items i {
+    color: red;
+}
+
+/* 最后一行容器 转换为弹性盒 */
+.skills-items {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    display: flex;
+    padding-left: 1.5rem;
+    /* 竖直居中 */
+    align-items: center;
+}
+
+/* 左边块 */
+.skills-items-thead {
+    /* 不伸缩 */
+    flex-shrink: 0;
+    color: #999;
+}
+
+/* 分割竖线 */
+.splitline {
+    display: inline-block;
+    width: 0.2rem;
+    height: 2rem;
+    margin: 0 1rem;
+    background-color: #e5eced;
+    flex-shrink: 0;
+}
+
+/*  右边块*/
+.info {
+    /* 覆盖父元素的line-height值 */
+    line-height: 3rem;
+}
+/* 红色文本样式 */
+.redtext {
+    color: red;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-width: 300px;
+    height: 5rem;
+    background-color: #fff;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer button {
+    width: 43%;
+    height: 42px;
+    border: 2px solid #5fc0cd;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1.8rem;
+    color: #5fc0cd;
+
+}
+
+.telephone {
+    background-color: #5fc0cd;
+    color: #fff;
+}
+
+/* 解决高度塌陷和边框重叠问题 */
+.clearfix::after,
+.clearfix::before {
+    display: table;
+    clear: both;
+    content: '';
+}

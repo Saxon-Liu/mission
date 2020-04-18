@@ -1,0 +1,105 @@
+//保证样式一致性
+@import "./base/normalize.css";
+//清除不需要的默认样式
+@import "./base/reset.css";
+// 媒体查询
+@import "./base/media_query";
+
+// 布局
+@import "./layout/header.less";
+@import "./layout/main.less";
+@import "./layout/footer.less";
+
+// 模块
+@import "./module/public.less";
+
+// ======================页面三==================================
+
+.btn_home {
+  width: 0.51rem;
+  height: 0.42rem;
+  .sprite1();
+  background-position: 0 -0.87rem;
+}
+.btn_info {
+  width: 0.4rem;
+  height: 0.4rem;
+  .sprite1();
+  background-position: -1.35rem 0;
+}
+.result_main {
+  bottom: 0;
+  padding-bottom: 1rem; 
+  border-top: 0.01rem solid #74d4eb;
+
+  // 胜利总结
+  .result {  
+    padding: 0 0.8rem;
+    background-color: @main-color;
+    .result_logo {
+      width: 3.5rem;
+      height: 2rem; 
+      margin: 0.2rem auto;
+      background: url(../image/win.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    &_font {
+      padding-bottom: 0.2rem;
+      font-size: 0.33rem;
+      color: @color-warning;
+    }
+    &_summary {
+      font-size: 0.26rem;
+      color: #fff;
+      span {
+        display: inline-block;
+        line-height: 0.4rem;
+      }
+    }
+  }
+
+  // 每日细节
+  .result_detailed {
+    &_date {
+      background-color: #fff;
+      padding: 0 0.8rem;
+      border-bottom: 0.01rem solid #999;
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 0.1rem;
+        span:first-child {
+          font-size: 0.3rem;
+        }
+        span:last-child {
+          font-size: 0.2rem;
+          color: #999;
+        }
+      }
+      p {
+        font-size: 0.26rem;
+        color: #999;
+        line-height: 0.26rem;
+      }
+    }
+  }
+}
+
+.result_footer {
+  a {
+    width: 2.7rem;
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 0.8rem;
+    color: #fff;
+    border-radius: 0.1rem;
+    &:first-child {
+      background-color: #f66f6f;
+    }
+    &:last-child {
+      background-color: @color-warning;
+    }
+  }
+}

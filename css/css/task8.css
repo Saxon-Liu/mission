@@ -1,0 +1,920 @@
+a:hover,
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    font-size: 62.5%;
+}
+
+header {
+    top: 0;
+    width: 100%;
+}
+
+/* ------- 顶部  ----- */
+.topbar-wrap {
+    width: 100%;
+    height: 4rem;
+    background-color: #fff;
+    color: #29b078;
+}
+
+.topbar {
+    height: 4rem;
+}
+
+.topbar>p {
+    float: left;
+    font-size: 1.4rem;
+    line-height: 4rem;
+}
+
+.top-login {
+    float: right;
+    color: #999;
+    font-size: 1.6rem;
+    line-height: 4rem;
+}
+
+.top-login span {
+    color: #999;
+}
+
+.top-login a:hover {
+    color: #32c086;
+}
+
+.topbar-social a:first-child:hover:after {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    background: url(../img/task8/code.jpg) no-repeat;
+    background-size: 100%;
+    background-color: #29b078;
+    z-index: 99;
+}
+
+.topbar-social i {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    margin-right: 2rem;
+}
+
+/* ---- 导航条 ---- */
+@media screen and (min-width:767px) {
+    .nav-wrap {
+        background-color: #29b078;
+    }
+
+    .topnav-header img {
+        float: left;
+        margin-top: 2rem;
+        height: 6rem;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    #topnav {
+        display: block;
+    }
+
+    .topnav {
+        float: right;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .topnav li {
+        float: left;
+        height: 10rem;
+        margin: 0 1rem;
+        padding: 0 1rem;
+        line-height: 10rem;
+    }
+
+    .topnav li:last-child {
+        margin-right: -1rem;
+    }
+
+    .topnav a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .topnav li:hover,
+    li.nav-active {
+        border-bottom: 0.3rem solid #fff;
+    }
+
+}
+
+/* ----- 移动端导航条 -------- */
+@media screen and (max-width:767px) {
+
+    .topnav-header img {
+        float: left;
+        margin-top: 1rem;
+        height: 4rem;
+    }
+
+    .btn-menu {
+        float: right;
+        margin-top: 1rem;
+        width: 4rem;
+        height: 4rem;
+        background-color: #47d197;
+        border: none;
+        border-radius: 0.4rem;
+    }
+
+    .btn-menu i {
+        font-size: 2.5rem;
+        color: #33956c;
+    }
+
+    .btn-menu:hover {
+        background-color: #26a26f;
+    }
+
+    .btn-menu:focus {
+        outline: none;
+    }
+
+    .topnav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .topnav-header {
+        height: 6rem;
+        background-color: #29b078;
+    }
+
+    .topnav li {
+        width: 100%;
+        height: 5rem;
+        text-align: center;
+        font-size: 2rem;
+        color: #fff;
+        line-height: 5rem;
+        background-color: #29b078;
+    }
+
+    .topnav a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-wrap>.container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .topnav li:hover,
+    li.nav-active {
+        background-color: #36c388;
+        border: none;
+    }
+
+    .topbar-social {
+        display: none;
+    }
+
+}
+
+
+main {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.main-items-wrap h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 8rem;
+    text-align: center;
+}
+
+/* -----   轮播图   ------- */
+.pointer-banner1 li {
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    border: 0.1rem solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, .2);
+}
+
+.pointer-banner1 .active {
+    background-color: #fff;
+}
+
+/* ------ 内容头部  ----- */
+.main-items {
+    margin: 10rem 0;
+}
+
+.main-item01-inner-wrap {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.main-item01-inner-wrap:last-child {
+    border-left: 0.15rem dashed #dedede;
+}
+
+.main-item01-inner {
+    display: inline-block;
+    height: 27rem;
+}
+
+.main-item01-inner p {
+    font-size: 1.6rem;
+    color: #999;
+    text-align: left;
+}
+
+.main-item01-inner-wrap i:not(.icon-08) {
+    font-size: 5rem;
+    color: #29b078;
+}
+
+.main-item01-inner h3 {
+    line-height: 4rem;
+}
+
+.item01-amount-inner {
+    padding-top: 5rem;
+    font-size: 1.8rem;
+    color: #29b078;
+    text-align: left;
+    line-height: 4rem;
+}
+
+/* --- 如何学习---- */
+.main-item02-block {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.main-item02-block p {
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #999;
+}
+
+.main-item02-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #32c086;
+    flex-shrink: 0;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, .2);
+}
+
+.main-item02-arrow {
+    background: url(../img/task8/task8_arrow.png) no-repeat center;
+    background-size: 3.2rem 3rem;
+}
+
+/* ------- 学员展示 ----- */
+.pointer-banner2 li {
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 50%;
+    box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, .2);
+}
+
+.pointer-banner2 .active {
+    background-color: #29b078;
+}
+
+.student-card {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2rem 3rem 4rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.student-card:hover {
+    box-shadow: 0.2rem 0.2rem 1em 0 rgba(0, 0, 0, .2);
+}
+
+.student-card-sculpture {
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.student-card-img01 {
+    background-image: url(../img/task8/task8_sculpture01.png);
+}
+
+.student-card-img02 {
+    background-image: url(../img/task8/task8_sculpture02.png);
+}
+
+.student-card-img03 {
+    background-image: url(../img/task8/task8_sculpture03.png);
+}
+
+.student-card-img04 {
+    background-image: url(../img/task8/task8_sculpture04.png);
+}
+
+
+.student-card-profile {
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.student-card-profile p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #999;
+}
+
+/* --------   合作企业     ------- */
+ul.coop {
+    margin-bottom: 5em;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.coop li {
+    height: 17rem;
+}
+
+.coop li:hover {
+    z-index: 1;
+    box-shadow: 0px 0.2rem 1.4em 0 rgba(0, 0, 0, .2);
+}
+
+.coop a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.coop-ali {
+    background-image: url(../img/task8/task8_logo02.jpg);
+}
+
+.coop-jinshan {
+    background-image: url(../img/task8/task8_logo03.jpg);
+}
+
+.coop-huanxin {
+    background-image: url(../img/task8/task8_logo04.jpg);
+}
+
+.coop-ronglian {
+    background-image: url(../img/task8/task8_logo05.jpg);
+}
+
+.coop-qiniu {
+    background-image: url(../img/task8/task8_logo06.jpg);
+}
+
+/* ------- 友情链接  ----- */
+.friendlink {
+    background-color: #fff;
+}
+
+.friendlink-group {
+    color: #999;
+    line-height: 3rem;
+}
+
+.friendlink-group a {
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid transparent;
+}
+
+.friendlink-group a:hover {
+    border-color: #29b078;
+}
+
+/* ------ 底部链接组 ------ */
+footer {
+    width: 100%;
+    padding: 2rem 0;
+    border: 0.1rem solid #32c086;
+    border-left: none;
+    border-right: none;
+    background-color: #29b078;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 3.2rem;
+}
+
+footer a:hover {
+    padding-bottom: 0.1rem;
+    border-bottom: 0.1rem solid #fff;
+
+}
+
+footer h3 {
+    font-weight: bold;
+}
+
+/* ------ 备案号  ---- */
+#copyright {
+    width: 100%;
+    background-color: #29b078;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* --- 置顶 -- */
+
+.scroll-wrap {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    /* background-color: #333; */
+}
+
+.scroll a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+}
+
+.scroll i {
+    font-size: 3rem;
+    color: #32c086;
+}
+
+/* ------- ----------页面二 ---------  ------------ */
+.coop-list-tab span {
+    position: relative;
+    font-size: 1.5rem;
+    color: #32c086;
+}
+
+#coop-list a.active span,
+.coop-list-tab span:hover {
+    color: #ff650e;
+}
+
+.coop-list-tab span::before {
+    content: '';
+    position: absolute;
+    top: 0.3rem;
+    left: -2rem;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    border: 0.15rem solid #ff650e;
+    border-radius: 50%;
+}
+
+#coop-list a.active span::before,
+.coop-list-tab span:hover:before {
+    background-color: #f9a372;
+}
+
+input[name="coop-list"] {
+    display: none;
+}
+
+.coop-list-wrap h3 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    line-height: 6rem;
+    font-weight: bold;
+    border-bottom: 0.1rem solid #e6e6e6;
+}
+
+
+.coop-list-wrap label {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.coop-list-introduction {
+    background-color: #fff;
+}
+
+.introduction-content-header {
+    font-size: 1.4rem;
+    border-bottom: 0.1rem solid #e6e6e6;
+}
+
+
+.introduction-content-wrap p {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    text-indent: 3rem;
+    color: #999;
+    line-height: 3rem;
+    padding: 0 15px;
+}
+
+.breadcrumb {
+    margin: 0;
+    padding: 2rem 0;
+    background-color: #fafafa;
+    line-height: 4rem;
+    font-size: 1.6rem;
+}
+
+.breadcrumb-item.active {
+    color: #32c086;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+}
+
+/* ---------- pc端  ------------- */
+@media screen and (min-width:768px) {
+    .main-coop-list {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 auto 3rem auto;
+    }
+
+    .coop-list-wrap {
+        float: left;
+        width: 25rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
+    }
+
+    .coop-list-wrap label>h3>i {
+        display: none;
+    }
+
+    .coop-list-tab {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -1rem;
+        width: 30rem;
+    }
+
+    .coop-list-tab a {
+        margin: 1rem 0;
+    }
+
+    .coop-list-introduction {
+        min-height: 70rem;
+        margin-left: 4rem;
+        border-radius: 0.5rem;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .2);
+    }
+
+    .introduction-content-header {
+        display: flex;
+        align-items: center;
+        padding: 0 5rem;
+    }
+
+    .introduction-content-header img {
+        margin-right: 3rem;
+    }
+
+    .introduction-content {
+        padding: 0 5rem;
+    }
+
+    .introduction-content p:last-child {
+        padding-bottom: 10rem;
+    }
+
+    .introduction-content-wrap {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .introduction-content-header {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* --- 移动端---- */
+@media screen and (max-width:767px) {
+
+    .coop-list-wrap {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        background-color: #fff;
+        color: #32c086;
+        border-radius: 0.3rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    #coop-list {
+        height: 0;
+        text-align: center;
+        overflow: hidden;
+        transition: height 0.6s;
+    }
+
+    #coop-list a {
+        display: block;
+        width: 100%;
+        line-height: 3rem;
+    }
+
+    #coop-list-header:checked~#coop-list {
+        height: 40rem;
+    }
+
+    .coop-list-wrap h3>i:last-child {
+        display: none;
+    }
+
+    #coop-list-header:checked~label>h3>i:last-child {
+        display: inline-block;
+    }
+
+    #coop-list-header:checked~label>h3>i:first-child {
+        display: none;
+    }
+
+    /* --------------- */
+    /* .coop-list-tab {
+        margin-bottom: 2rem;
+    }
+
+    .coop-list-tab a {
+        padding-left: 4rem;
+    } */
+
+    .coop-list-introduction {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 0.3rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .introduction-content-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/* -------- 页面三 ------- */
+#employment-list {
+    font-size: 1.2rem;
+    color: #999;
+    padding: 3rem 0;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #edf1f2;
+}
+
+#employment-list a {
+    margin-left: 2rem;
+    color: #333;
+}
+
+#employment-list a:hover {
+    color: #fff;
+    background-color: #29b078;
+}
+
+.frontend-wrap>h4 {
+    margin: 3rem 0;
+    font-weight: bold;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #efefef;
+}
+
+/* --- 卡片正面--- */
+.frontend-card-wrap {
+    margin-left: 0;
+    right: 0;
+}
+
+.frontend-card {
+    position: relative;
+    float: left;
+    width: 32%;
+    padding: 0;
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.division-block {
+    float: left;
+    width: 2%;
+    height: 1rem;
+}
+
+.card-head {
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+}
+
+.card-head img {
+    float: left;
+    width: 13rem;
+    padding-right: 1rem;
+}
+
+.card-head h4 {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.card-head p {
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+}
+
+.card-main {
+    width: 380px;
+    padding: 0;
+
+}
+
+/* ---- 表格 ---- */
+.card-main,
+table,
+tbody {
+    margin: 0;
+    width: 100%;
+}
+
+.card-main table {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+
+.card-main th,
+.card-main td {
+    height: 4rem;
+    padding: 0 1rem;
+    border-top: 1px solid #efefef;
+    border-left: 1px solid #efefef
+}
+
+
+.card-main table i {
+    font-size: 1.2rem;
+    color: #ff5c00;
+    margin-left: 1rem;
+}
+
+td[colspan="3"] {
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    border-right: none;
+}
+
+td[colspan="4"] {
+    color: #333;
+    font-weight: bold;
+    text-align: right;
+    border-left: none;
+}
+
+.card-fontstyle-01 {
+    color: #f01400;
+}
+
+.card-fontstyle-03 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* ---- 卡片背面  --- */
+.frontend-card-back {
+    /* display: none; */
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    padding: 5rem 3rem;
+    transition: bottom 0.2s;
+}
+
+.frontend-card-back h4 {
+    text-align: center;
+    line-height: 5rem;
+}
+
+.frontend-card-back p {
+    font-size: 1.6rem;
+    text-align: justify;
+    text-indent: 1rem;
+}
+
+.frontend-card:hover .frontend-card-back {
+    bottom: 0;
+}
+
+/* ---  媒体查询 ---- */
+@media screen and (min-width:992px) {
+    div.division-block:nth-child(6n) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .frontend-card {
+        width: 48%;
+    }
+
+    .division-block {
+        width: 4%;
+    }
+
+    div.division-block:nth-child(4n) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .frontend-card {
+        width: 100%;
+    }
+
+    .division-block {
+        display: none;
+    }
+}
