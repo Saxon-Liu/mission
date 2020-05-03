@@ -1,0 +1,90 @@
+@import "./base/base.less";
+@import "./common/layout.less";
+@import "./common/module.less";
+
+.l_header {
+  .home {
+    width: 0.5rem;
+    height: 0.4rem;
+    .sprite1();
+    background-position: 0 -0.88rem;
+  }
+  .info {
+    width: 0.4rem;
+    height: 0.4rem;
+    .sprite1();
+    background-position: -1.35rem 0;
+  }
+}
+
+main.page5 {
+  padding-bottom: 1rem;
+  border-top: 0.01rem solid #74d4eb;
+  .result {
+    &_top {
+      padding: 0 0.5rem;
+      background-color: @main-color;
+      .result_logo {
+        position: relative;
+        width: 3.5rem;
+        height: 2rem;
+        margin: 0.5rem auto 1rem;
+        background: url(../image/win.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      > p {
+        font-size: 0.25rem;
+        color: #fff;
+        line-height: 0.8rem;
+        span {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    &_bottom {
+      background-color: #fff;
+      .result_detailed {
+        display: none;
+        width: 100%;
+        padding: 0 0.5rem;
+        border-bottom: 0.01rem solid #999;
+        .detailed_date {
+          font-size: 0.35rem;
+          line-height: 0.8rem;
+        }
+        p {
+          font-size: 0.28rem;
+          color: #999;
+          line-height: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  justify-content: space-around;
+  background-color: rgba(41, 189, 224, 0.6);
+  height: 1rem;
+  button {
+    width: 2.5rem;
+    height: 0.7rem;
+    border-radius: 0.1rem;
+    color: #fff;
+  }
+  button:first-child {
+    background-color: #f66f6f;
+  }
+  button:last-child {
+    background-color: #fbb435;
+  }
+}
+
+#gameResult_logo {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  font-size: 0.35rem;
+  color: #fff;
+  transform: translate(-50%, -0.2rem);
+}

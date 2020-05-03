@@ -1,0 +1,880 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*Document 
+  *文档
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/**
+ * 1. 纠正在所有浏览器中的行高。
+ * 2. 在 iOS 设备调整屏幕方向后，防止字体大小发生改变。
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/*Sections 
+  *各分区
+   ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+/**
+ * 清除在所有浏览器中的 margin。
+ */
+body {
+  margin: 0;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* 
+  *在IE中保持"main"元素一致。 
+*/
+main {
+  display: block;
+}
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+/**
+ * 纠正 section 和 article 区块元素中的h1元素在 Chrome、Firefox 和 Safari 浏览器中的 font-size 和 margin。
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/*Grouping content 
+  *为内容分组
+   ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+/**
+ * 1. 增加在 Firefox 浏览器中应显示的盒子尺寸。
+   * 2. 在 Edge 和 IE 浏览器中应用的溢出样式。
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/**
+  * 1. 纠正在所有浏览器中字体大小的继承和缩放比例。
+  * 2. 纠正所有浏览器对以 em 为单位表示字体大小所产生的古怪效果。
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/*Text-level semantics 
+  *文本层级的语义
+   ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+/**
+ * 清除 IE 10浏览器为激活的链接添加的灰色背景。
+ */
+a {
+  background-color: transparent;
+}
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+/**
+  * 1. 清除在 Chrome 57-浏览器中的下边框。
+  * 2. 增加在 Chrome、Edge、IE、Opera 和 Safari 浏览器中正确的文本修饰。
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+  */
+/**
+   * 增加在 Chrome、Edge 和 Safari 浏览器中正确的字体粗细样式。
+  */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/**
+   * 1. 纠正在所有浏览器中字体大小的继承和缩放比例问题。
+   * 2. 纠正所有浏览器对以 em 为单位表示字体大小所产生的古怪效果。
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+   * Add the correct font size in all browsers.
+   */
+/**
+ * 增加在所有浏览器中正确的字体大小。
+ */
+small {
+  font-size: 80%;
+}
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+/**
+   * 防止 sub 和 sup 元素影响在所有浏览器中的行高。
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/*Embedded contentF 
+  *嵌入的内容
+   ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+/**
+   * 清除 IE 10-浏览器中包裹在链接内部的图像的边框。
+ */
+img {
+  border-style: none;
+}
+/*Forms 
+  *表单
+   ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+/**
+  * 1. 修改在所有浏览器中的字体样式。
+  * 2. 清除 Firefox 和 Safari 浏览器中的 margin。
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+/**
+  * 在 IE 浏览器中显示超出的部分。
+  * 1. 在 Edge 浏览器中显示超出的部分。
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+/**
+ * 删除Edge、Firefox和IE中文本转换的继承。
+ * 1. 删除Firefox中文本转换的继承。
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+/**
+ * 纠正在 iOS 系统和 Safari 浏览器中无法为可点击类型添加样式的问题。
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+/**
+ * 在 Firefox 浏览器中，清除内部 border 和 padding。
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+/**
+ * 根据前面的规则，将按钮聚焦样式恢复为未设置前的。
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+   * Correct the padding in Firefox.
+   */
+/**
+ * 修正Firefox的内边距。
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/**
+   * 1. 纠正在 Edge 和 IE 浏览器中文本换行异常的问题。
+   * 2. 纠正在IE浏览器中 fieldset 元素 color 属性不能正确继承的问题。
+   * 3. 清除 padding，开发者将 fieldset 元素在所有浏览器中的 padding 值都清零时，不至于出错。
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/**
+   * 增加 Chrome、Firefox 和 Opera 浏览器中正确的垂直对齐方式。
+   */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/**
+   * 清除 IE 10+浏览器中默认的垂直滚动条。
+   */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/**
+   * 1. 增加 IE 10-浏览器中正确的盒子尺寸类型。
+   * 2. 在 IE 10-浏览器中清除 padding。
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/**
+   * 纠正在 Chrome 浏览器中增加和减少按钮组件的光标样式。
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/**
+   * 1. 纠正 Chrome 和 Safari 浏览器中的古怪样式。
+   * 2. 纠正在 Safari 中的轮廓样式。
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/**
+   * 清除 macOS 系统下 Chrome 和 Safari 浏览器的内部 padding 样式。
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/**
+   * 1. 纠正无法在 iOS 系统和 Safari 浏览器中为可点击类型的元素应用样式的问题。
+   * 2. 在 Safari 浏览器中将 font 属性值改为 inherit。
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+ *交互
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/*
+   * 增加在 Edge、IE 10+和 Firefox 浏览器中的正确显示方式。
+   */
+details {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+/*
+   * 增加在所有浏览器中的正确显示方式。
+   */
+summary {
+  display: list-item;
+}
+/* Misc
+ *脚本
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/**
+   * 增加在 IE 10+浏览器中的正确显示方式。
+   */
+template {
+  display: none;
+}
+/**
+ * Add the correct display in IE 10.
+ */
+/**
+   * 增加在 IE 10浏览器中的正确显示方式。
+   */
+[hidden] {
+  display: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+/* 清除上下箭头 */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+p {
+  margin: 0;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px;
+  }
+}
+@media screen and (min-width: 560px) {
+  html {
+    font-size: 87.5px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 112.5px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 117.1875px;
+  }
+}
+.l_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.9rem;
+  background-color: #29bde0;
+  text-align: center;
+}
+.l_header_btn--l {
+  position: absolute;
+  left: 0.2rem;
+  bottom: 0.2rem;
+}
+.l_header_btn--r {
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0.2rem;
+}
+.l_header .header_title {
+  color: #fff;
+  font-size: 0.34rem;
+  line-height: 0.9rem;
+}
+.l_header .back {
+  width: 0.25rem;
+  height: 0.25rem;
+  border: 0.04rem solid #fff;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+.l_main {
+  position: absolute;
+  top: 0.9rem;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+}
+.l_main::-webkit-scrollbar {
+  display: none;
+}
+.l_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.vote_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  height: 1.5rem;
+  background-color: #29bde0;
+}
+.result_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-around;
+  height: 1rem;
+  background-color: rgba(41, 189, 224, 0.5);
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+/* ================ public ============================ */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.scroll_hidden::-webkit-scrollbar {
+  display: none;
+}
+.sprite1 {
+  background: url(../image/sprite1.png) no-repeat;
+  background-size: 1.8rem 1.5rem;
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border: 0.01rem solid #999;
+}
+.carousel .carousel_main {
+  position: relative;
+  width: 22.8rem;
+  display: flex;
+  flex-direction: row;
+  transition: left 0.6s ease-in-out;
+}
+.carousel_indicators {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0.05rem;
+  left: 50%;
+  height: 0.3rem;
+  transform: translatex(-50%);
+  z-index: 999;
+}
+.carousel_indicators .pointer {
+  display: block;
+  width: 0.15rem;
+  height: 0.15rem;
+  margin: 0 0.05rem;
+  background-color: #999;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: all 0.6s;
+}
+.carousel_control label {
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 0.4rem solid transparent;
+  border-bottom: 0.4rem solid transparent;
+  transform: translateY(-0.3rem);
+}
+.carousel_control label:hover {
+  opacity: 0.8;
+}
+.carousel_control .btn_next {
+  right: 0.05rem;
+  border-right: none;
+  border-left: 0.4rem solid #fbb435;
+}
+.carousel_control .btn_pre {
+  left: 0.05rem;
+  border-left: none;
+  border-right: 0.4rem solid #fbb435;
+}
+#page1:checked ~ .carousel .carousel_main {
+  left: 0;
+}
+#page2:checked ~ .carousel .carousel_main {
+  left: -5.7rem;
+}
+#page3:checked ~ .carousel .carousel_main {
+  left: -11.4rem;
+}
+#page4:checked ~ .carousel .carousel_main {
+  left: -17.1rem;
+}
+#page1:checked ~ .carousel .carousel_indicators .pointer:nth-child(1),
+#page2:checked ~ .carousel .carousel_indicators .pointer:nth-child(2),
+#page3:checked ~ .carousel .carousel_indicators .pointer:nth-child(3),
+#page4:checked ~ .carousel .carousel_indicators .pointer:nth-child(4) {
+  opacity: 1;
+  background-color: #29bde0;
+}
+#page1:checked ~ .carousel .btn_pre:nth-child(4),
+#page2:checked ~ .carousel .btn_pre:nth-child(1),
+#page3:checked ~ .carousel .btn_pre:nth-child(2),
+#page4:checked ~ .carousel .btn_pre:nth-child(3),
+#page1:checked ~ .carousel .btn_next:nth-child(2),
+#page2:checked ~ .carousel .btn_next:nth-child(3),
+#page3:checked ~ .carousel .btn_next:nth-child(4),
+#page4:checked ~ .carousel .btn_next:nth-child(1) {
+  display: block;
+}
+/* ====================== 弹窗================================= */
+/*  弹窗 */
+.popup_quit_wrap {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.popup_quit_wrap .popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4.8rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 0.15rem;
+  transform: translate(-50%, -50%);
+}
+.popup_quit_wrap .popup_header {
+  font-size: 0.34rem;
+  text-align: center;
+}
+.popup_quit_wrap .popup_body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.popup_quit_wrap .popup_body .btn {
+  width: 1.8rem;
+  border: 0.01rem solid;
+  font-size: 0.34rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.9rem;
+  border-radius: 0.15rem;
+}
+.popup_quit_wrap .popup_body .btn.bg_danger {
+  background-color: #f66f6f;
+}
+.popup_quit_wrap .popup_body .btn.bg_normal {
+  background-color: #c6c6c6;
+}
+#popup_quit_btn:checked ~ .popup_quit_wrap {
+  visibility: initial;
+}
+/* ========== 侧边栏 ================ */
+.sidemenu_container {
+  position: fixed;
+  left: -40vw;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  transition: left 0.5s ease-in-out;
+}
+.sidemenu_container .sidemenu_menu {
+  width: 40vw;
+  height: 100%;
+}
+.sidemenu_container .sidemenu_main {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  overflow: auto;
+}
+.sidemenu_container .sidemenu_main .sidemenu_label--cancle {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  transition: all 0.3s 0.5s ease-in-out;
+}
+#sidemenu_btn:checked ~ .sidemenu_container {
+  left: 0;
+}
+#sidemenu_btn:checked ~ .sidemenu_container .sidemenu_label--cancle {
+  visibility: initial;
+}
+.sidemenu_label_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.sidemenu_label_btn:hover {
+  opacity: 0.8;
+}
+.sidemenu_label_btn span {
+  width: 80%;
+  height: 10%;
+  background-color: #fff;
+}
+.menulist {
+  padding-top: 0.2rem;
+  background-color: #29bde0;
+}
+.menulist .menulist_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 0.2rem 0;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.01rem solid #fff;
+  color: #fff;
+  font-size: 0.28rem;
+}
+.menulist .menulist_item:hover {
+  opacity: 0.7;
+}
+.menulist .menulist_item .icon {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin: 0 0.3rem;
+  background-image: url(../../task13/image/logo.png);
+  background-repeat: no-repeat;
+  background-size: 1.8rem 1.5rem;
+}
+.menulist .menulist_item .icon-2 {
+  background-position: -0.45rem 0;
+}
+.menulist .menulist_item .icon-3 {
+  background-position: -0.9rem 0;
+}
+.menulist .menulist_item .icon-4 {
+  background-position: -1.35rem 0;
+}
+.index_main {
+  position: absolute;
+  left: 50%;
+  width: 5.7rem;
+  transform: translatex(-50%);
+  margin-bottom: 0.5rem;
+}
+.last_game {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0.3rem 0;
+  border: 0.01rem solid #999;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 0.32rem;
+  color: #999;
+}
+.last_game::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0.3rem;
+  top: 50%;
+  width: 0.2rem;
+  height: 0.2rem;
+  border: 0.05 solid #e1e5e7;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg) translateY(-50%);
+}
+.gamelist {
+  width: 100%;
+}
+.gamelist_header {
+  border-bottom: 0.01rem solid #fbb435;
+  font-size: 0.32rem;
+  text-align: center;
+  line-height: 0.9rem;
+  color: #fbb435;
+}
+.gamelist .gamelist_group {
+  margin-top: 0.3rem;
+  padding-bottom: 0.2rem;
+  text-align: center;
+}
+.gamelist .gamelist_group_version {
+  width: 80%;
+  line-height: 1.3rem;
+  font-size: 0.32rem;
+  background-color: #29bde0;
+  margin: 0 auto;
+  color: #fff;
+}
+.gamelist .gamelist_group_version a {
+  display: block;
+}
+.gamelist .gamelist_group_version:hover {
+  opacity: 0.7;
+}
+.gamelist .gamelist_group_font {
+  line-height: 0.8rem;
+  font-size: 0.24rem;
+  color: #333;
+}
+/*# sourceMappingURL=./index.css.map */

@@ -1,0 +1,127 @@
+@import "./base/base.less";
+@import "./common/layout.less";
+@import "./common/module.less";
+
+// =================== 页面一 ========================
+// 侧边栏展开按钮
+.sidemenu_label_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; 
+  width: 0.4rem;
+  height: 0.4rem;
+  &:hover {
+    opacity: 0.8;  
+  } 
+  span {
+    width: 80%;
+    height: 10%; 
+    background-color: #fff;
+  }
+}
+// 侧边栏
+.menulist {
+  padding-top: 0.2rem;
+  background-color: @main-color;
+  .menulist_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 0.2rem 0;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.01rem solid #fff;
+    color: #fff;
+    font-size: 0.28rem;
+    &:hover {
+      opacity: 0.7;
+    } // 侧边栏图标
+    .icon {
+      display: inline-block;
+      width: 0.4rem;
+      height: 0.4rem;
+      margin: 0 0.3rem;
+      background-image: url(../../task13/image/logo.png);
+      background-repeat: no-repeat;
+      background-size: 1.8rem 1.5rem;
+      &-2 {
+        background-position: -0.45rem 0;
+      }
+      &-3 {
+        background-position: -0.9rem 0;
+      }
+      &-4 {
+        background-position: -1.35rem 0;
+      }
+    }
+  }
+}
+// 页面一主要部分
+.index_main {
+  position: absolute;
+  left: 50%;
+  width: 5.7rem;
+  transform: translatex(-50%);
+  margin-bottom: 0.5rem;
+}
+// 上次游戏block
+.last_game {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0.3rem 0;
+  border: 0.01rem solid #999;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 0.32rem;
+  color: #999;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    width: 0.2rem;
+    height: 0.2rem;
+    border: 0.05 solid #e1e5e7;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(45deg) translateY(-50%);
+  }
+}
+//轮播单页内容
+.gamelist {
+  width: 100%;
+  &_header {
+    border-bottom: 0.01rem solid @color-warning;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 0.9rem;
+    color: @color-warning;
+  }
+  .gamelist_group {
+    margin-top: 0.3rem;
+    padding-bottom: 0.2rem;
+    text-align: center;
+    &_version {
+      width: 80%;
+      line-height: 1.3rem;
+      font-size: 0.32rem;
+      background-color: @main-color;
+      margin: 0 auto;
+      color: #fff;
+      & a {
+        display: block;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    &_font {
+      line-height: 0.8rem;
+      font-size: 0.24rem;
+      color: #333;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法官台本</title>
+    <!-- jQ库 -->
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/page4.css">
+    <script src="./js/state-machine.js"></script>
+</head>
+
+<body>
+    <header class="l_header">
+        <a class="back l_header_btn--l" href="./page1.html"></a>
+        <div class="header_title">法官台本</div>
+    </header>
+    <main class="l_main">
+        <div class="container game_process">
+            <button class="collapse game_process_head">第<span>一</span>天</button>
+            <div class="collapse_body game_process_body">
+                <button class="step step1">杀手杀人</button>
+                <button class="step step2">亡灵发表遗言</button>
+                <button class="step step3">玩家依次发言</button>
+                <button class="step step4">全民投票</button>
+            </div>
+        </div>
+
+    </main>
+    <footer class="l_footer page4">
+        <button>结束游戏</button>
+        <button>法官日志</button>
+    </footer>
+
+    <div id="popup_wrap">
+        <div class="popup">
+            <div class="popup_body">
+                <p>请按顺序操作</p>
+            </div>
+            <div class="popup_footer">
+                <button class="cancle">取消</button>
+                <button class="determine">确认</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/page4.js"></script>
+</body>
+
+</html>

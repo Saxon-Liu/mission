@@ -1,0 +1,168 @@
+@import "./base/base.less";
+@import "./common/layout.less";
+@import "./common/module.less";
+
+main.page5 {
+  background-color: @main-color;
+  border-top: 1px solid #74d4eb;
+}
+
+.changeColor {
+  background-color: #83b09a !important;
+  &::before {
+    border-right: 0.2rem solid #83b09a !important;
+  }
+}
+// 游戏流程
+.game_process {
+  display: none;
+  margin: 0.2rem auto;
+  &_head {
+    width: 100%;
+    height: 0.8rem;
+    border: 1px solid #999;
+    color: @main-color;
+    font-size: 0.3rem;
+  }
+  &_body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #999;
+    border-top: none;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      width: 0.02rem;
+      height: 100%;
+      background-color: #999;
+      transform: translate(-2.5rem, 0);
+    }
+    p {
+      width: 4.5rem;
+      font-size: 0.25rem;
+      line-height: 0.5rem;
+      // border: 1px solid;
+      margin-left: 1rem;
+    }
+    button {
+      position: relative;
+      width: 4.5rem;
+      height: 0.7rem;
+      margin: 0.2rem 0 0.2rem 1rem;
+      background-color: #24a7c6;
+      font-size: 0.3rem;
+      color: #fff;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -0.2rem;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border-top: 0.1rem solid transparent;
+        border-bottom: 0.1rem solid transparent;
+        border-right: 0.2rem solid #24a7c6;
+        border-left: none;
+        transform: translateY(-50%);
+      }
+
+      &.step1::after,
+      &.step2::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: #fff;
+        background-image: url(./../image/sprite2.png);
+        background-size: 1.2rem 0.6rem;
+        background-repeat: no-repeat;
+        border: 1px solid #999;
+        border-radius: 50%;
+        transform: translate(-3.3rem, -50%);
+        // 禁止事件
+        pointer-events: none;
+      }
+      &:nth-child(1)::after {
+        background-position: 0.02rem 0;
+      }
+
+      &:nth-child(2)::after {
+        background-position: -0.61rem 0;
+      }
+    }
+  }
+}
+// 底部
+footer.page4 {
+  height: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(41,189,224,.8);
+  button {
+    width: 3rem;
+    height: 0.8rem;
+    background-color: #fbb435;
+    border-radius: 0.1rem;
+    color: #fff;
+  }
+}
+#popup_wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  .popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    overflow: hidden;
+    width: 5rem;
+    height: 2rem;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 0.08rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    .popup_body {
+      width: 100%;
+      height: 40%;
+      color: @main-color;
+      p {
+        height: 100%;
+        font-size: 0.3rem;
+      }
+    }
+    .popup_footer {
+      display: flex;
+      width: 100%;
+      height: 40%;
+      button {
+        width: 50%;
+        height: 100%;
+        border: 1px solid;
+        border-right: none;
+        color: @main-color;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// #83b09a
