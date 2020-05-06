@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQ库 -->
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/base/bootstrap.css">
+    <link rel="stylesheet" href="./style/login.css">
+
+    <title>登录</title>
+</head>
+
+<body>
+    <div class="bg-container">
+        <form id="loginForm">
+            <div class="input-group">
+                <input id="inputUser" class="input-t" type="text" placeholder="用户名" autocomplete="off">
+                <div class="icon"></div>
+                <div class="blank-alert">请输入用户名</div>
+            </div>
+
+            <div class="input-group">
+                <input id="inputPass" class="input-t" type='password' placeholder="密码">
+                <div class="icon"></div>
+                <div class="blank-alert">请输入您的密码</div>
+            </div>
+            <p class="message-alert"></p>
+            <input id="loginSubmit" class="input-s" type='button' value='登录'>
+        </form>
+    </div>
+    <script src='./js/login.js'></script>
+</body>
+
+</html>
