@@ -31,11 +31,18 @@ $(document).ready(function () {
       .text(playerNum + 1);
     $(".identify_content").text(identifyArr[playerNum - 1]);
 
+    // 法官查看
     if (clickTimes >= identifyArr.length * 2 - 1) {
       // 切换显隐状态
       $(".passId_hidden").hide();
       $(".passId_show").hide();
       $(".passId_last").show();
+    }
+    if (clickTimes >= identifyArr.length * 2) {
+      //
+      $(".identify_title").text(0);
+      $(".identify_show").hide();
+      $(".identify_hidden").show();
     }
     // console.log(identifyArr.length);
 

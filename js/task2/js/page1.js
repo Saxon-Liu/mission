@@ -1,7 +1,7 @@
 /* ============ 游戏人数配比 ============= */
 $(document).ready(function () {
   // 默认值
-  var totalNum = 4;
+  var totalNum = 6;
 
   // 计算人数
   function myInput() {

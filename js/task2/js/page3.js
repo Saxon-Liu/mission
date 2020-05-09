@@ -49,7 +49,7 @@ $(document).ready(function () {
     $("footer")
       .find("button")
       .click(function () {
-        $(location).attr("href", "../task2/page4.html");
+        $(location).attr("href", "./page4.html");
       });
   } else {
     /* ========= 杀人和投票公用 ======== */
@@ -169,7 +169,7 @@ $(document).ready(function () {
               // // 死亡列表 转换类型
               deathList = deathList.join(",");
               sessionStorage.setItem("deathList", JSON.stringify(deathList));
-              $(location).attr("href", "../task2/page4.html");
+              $(location).attr("href", "./page4.html");
             }
           }
         });
@@ -206,11 +206,11 @@ $(document).ready(function () {
               // 游戏结束
               step = result;
               sessionStorage.setItem("step", step);
-              $(location).attr("href", "../task2/page5.html");
+              $(location).attr("href", "./page5.html");
             } else {
               step = 0;
               sessionStorage.setItem("step", step);
-              $(location).attr("href", "../task2/page4.html");
+              $(location).attr("href", "./page4.html");
             }
           }
         });

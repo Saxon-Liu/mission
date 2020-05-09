@@ -119,7 +119,7 @@ $(document).ready(function () {
         sessionStorage.setItem("step", step);
         return true;
         // 点击之前天数的step
-      } else if (parentDay < day) {
+      } else if (parentDay < day || step > stepNum) {
         alert("请进行下一步");
         return false;
         // 点击之后的step
@@ -133,7 +133,7 @@ $(document).ready(function () {
       case "杀手杀人":
         // 返回值判断操作正确 执行下一步
         if (judgeProcess(1)) {
-          window.location.href = "page3.html";
+          window.location.href = "./page3.html";
         }
 
         break;
@@ -149,7 +149,7 @@ $(document).ready(function () {
         break;
       case "全民投票":
         if (judgeProcess(4)) {
-          window.location.href = "page3.html";
+          window.location.href = "./page3.html";
         }
         break;
     }
@@ -162,6 +162,12 @@ $(document).ready(function () {
       step = step + "log";
       sessionStorage.setItem("step", step);
       $(location).attr("href", "./page3.html");
+    });
+  $(".l_footer")
+    .find("button")
+    .eq(0)
+    .click(function () {
+      $("#popup_wrap").show();
     });
 
   // ======折叠
@@ -180,7 +186,8 @@ $(document).ready(function () {
     $("#popup_wrap")
       .find(".determine")
       .click(function () {
-        $("#popup_wrap").css("display", "none");
+        $(location).attr("href", "page1.html");
+        // $("#popup_wrap").css("display", "none");
       });
   });
 
