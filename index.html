@@ -1,157 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>任务列表</title>
-    <base target="_blank">
+    <base target="_blank" />
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            text-decoration: none;
-            list-style: none;
-        }
+      * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+      }
 
-        a {
-            color: inherit;
-        }
+      a {
+        color: inherit;
+      }
 
-        body {
-            background-color: rgb(213, 218, 228);
-        }
+      body {
+        background-color: rgb(213, 218, 228);
+      }
 
-        main {
-            width: 96%;
-            height: 96%;
-            /* 限制宽度防止过度拉伸和缩放 */
-            min-width: 300px;
-            max-width: 650px;
-            min-height: 600px;
-            max-height: 800px;
-            /* 居中显示 */
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: 10px auto;
-            /* 设置背景图 可拉伸缩放 */
-            background: url(./index.png) no-repeat;
-            background-size: 100% 100%;
-            /* 设置阴影 圆角 */
-            box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);
-            border-radius: 5px;
-            /* 文字居中 */
-            text-align: center;
-            overflow: hidden;
-        }
+      main {
+        width: 96%;
+        height: 96%;
+        /* 限制宽度防止过度拉伸和缩放 */
+        min-width: 300px;
+        max-width: 650px;
+        min-height: 600px;
+        max-height: 800px;
+        /* 居中显示 */
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 10px auto;
+        /* 设置背景图 可拉伸缩放 */
+        background: url(./index.png) no-repeat;
+        background-size: 100% 100%;
+        /* 设置阴影 圆角 */
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        /* 文字居中 */
+        text-align: center;
+        overflow: hidden;
+      }
 
-        h1 {
-            color: #505682;
-            margin: 35px 0 8px;
-        }
+      h1 {
+        color: #505682;
+        margin: 35px 0 8px;
+      }
 
-        .list {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            color: #215FB2;
-            overflow: hidden;
-            height: 0;
-            transition: height 0.6s ease-in-out;
-            box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
-        }
+      .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #215fb2;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.6s ease-in-out;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+      }
 
-        .list a:hover {
-            color: #8AC6C4;
-        }
+      .list a:hover {
+        color: #8ac6c4;
+      }
 
-        main>a {
-            font-size: 14px;
-            position: absolute;
-            bottom: 0;
-            margin-left: -72px;
-            margin-bottom: -20px;
-            color: #505682;
-        }
+      main > a {
+        font-size: 14px;
+        position: absolute;
+        bottom: 0;
+        margin-left: -72px;
+        margin-bottom: -20px;
+        color: #505682;
+      }
 
-        .container {
-            position: absolute;
-            top: 100px;
-            left: 50%;
-            transform: translatex(-50%);
-        }
+      .container {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translatex(-50%);
+      }
 
-        .task {
-            display: block;
-            width: 200px;
-            border-radius: 5px;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
-            /* line-height: 20px; */
-            font-size: 20px;
-            font-weight: bold;
-            color: #505682;
-        }
+      .task {
+        display: block;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        /* line-height: 20px; */
+        font-size: 20px;
+        font-weight: bold;
+        color: #505682;
+      }
 
-        input {
-            display: none;
-        }
+      input {
+        display: none;
+      }
 
-        #js:checked~.list2,
-        #css:checked~.list1 {
-            height: 420px;
-        }
+      #js:checked ~ .list2,
+      #css:checked ~ .list1 {
+        height: 420px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <h1>任务列表</h1>
-        <div class="container">
-            <input id="css" type="checkbox" name="task">
-            <input id="js" type="checkbox" name="task" checked="checked">
-            <label for="css" class="task">
-                css
-            </label>
-            <ul class="list1 list">
-                <li><a href="./css/html/task1.html">任务一&ensp;&ensp;</a></li>
-                <li><a href="./css/html/task3.html">任务三&ensp;&ensp;</a></li>
-                <li><a href="./css/html/task4.html">任务四&ensp;&ensp;</a></li>
-                <li><a href="./css/html/task5.html">任务五&ensp;&ensp;</a></li>
-                <li><a href="./css/html/task6.html">任务六&ensp;&ensp;</a></li>
-                <li><a href="./css/html/task7/index.html">任务七&ensp;&ensp;</a></li>
-                <li><a href="./css/html/task8/index.html">任务八&ensp;&ensp;</a></li>
-                <li><a href="./css/html/task10.html">任务十&ensp;&ensp; </a></li>
-                <li><a href="./css/html/task11.html">任务十一</a></li>
-                <li><a href="./css/html/task12/page1.html">任务十二</a></li>
-                <li><a href="./css/task13/index.html">任务十三</a></li>
-                <li><a href="./css/task14/index.html">任务十四</a></li>
-            </ul>
-            <label for="js" class="task">
-                js
-            </label>
-            <ul class="list2 list">
-                <li><a href="./js/task1/task1.html">任务一&ensp;&ensp;</a></li>
-                <li><a href="./js/task2/index.html">任务二&ensp;&ensp;</a></li>
-                <li><a href="./js/task5/login.html">任务五&ensp;&ensp;</a></li>
-                <li><a href="">任务六&ensp;&ensp;</a></li>
-                <li><a href="">任务七&ensp;&ensp;</a></li>
-                <li><a href="">任务八&ensp;&ensp;</a></li>
-                <li><a href="">任务九&ensp;&ensp;</a></li>
-                <li><a href="">任务十&ensp;&ensp;</a></li>
-                <li><a href="">任务十一</a></li>
-                <li><a href="">任务十二</a></li>
-                <li><a href="">任务十三</a></li>
-                <li><a href="">任务十四</a></li>
-                <li><a href="">任务十五</a></li>
-            </ul>
-        </div>
-        <a href="http://www.beian.miit.gov.cn/" target="_blank">鲁ICP备20003930号-1</a>
+      <h1>任务列表</h1>
+      <div class="container">
+        <input id="css" type="checkbox" name="task" />
+        <input id="js" type="checkbox" name="task" checked="checked" />
+        <label for="css" class="task">
+          css
+        </label>
+        <ul class="list1 list">
+          <li><a href="./css/html/task1.html">任务一&ensp;&ensp;</a></li>
+          <li><a href="./css/html/task3.html">任务三&ensp;&ensp;</a></li>
+          <li><a href="./css/html/task4.html">任务四&ensp;&ensp;</a></li>
+          <li><a href="./css/html/task5.html">任务五&ensp;&ensp;</a></li>
+          <li><a href="./css/html/task6.html">任务六&ensp;&ensp;</a></li>
+          <li><a href="./css/html/task7/index.html">任务七&ensp;&ensp;</a></li>
+          <li><a href="./css/html/task8/index.html">任务八&ensp;&ensp;</a></li>
+          <li><a href="./css/html/task10.html">任务十&ensp;&ensp; </a></li>
+          <li><a href="./css/html/task11.html">任务十一</a></li>
+          <li><a href="./css/html/task12/page1.html">任务十二</a></li>
+          <li><a href="./css/task13/index.html">任务十三</a></li>
+          <li><a href="./css/task14/index.html">任务十四</a></li>
+        </ul>
+        <label for="js" class="task">
+          js
+        </label>
+        <ul class="list2 list">
+          <li><a href="./js/task1/task1.html">任务一&ensp;&ensp;</a></li>
+          <li><a href="./js/task2/index.html">任务二&ensp;&ensp;</a></li>
+          <li><a href="./js/task5/login.html">任务五&ensp;&ensp;</a></li>
+          <li><a href="./js/task6/index.html">任务六&ensp;&ensp;</a></li>
+          <li><a href="">任务七&ensp;&ensp;</a></li>
+          <li><a href="">任务八&ensp;&ensp;</a></li>
+          <li><a href="">任务九&ensp;&ensp;</a></li>
+          <li><a href="">任务十&ensp;&ensp;</a></li>
+          <li><a href="">任务十一</a></li>
+          <li><a href="">任务十二</a></li>
+          <li><a href="">任务十三</a></li>
+          <li><a href="">任务十四</a></li>
+          <li><a href="">任务十五</a></li>
+        </ul>
+      </div>
+      <a href="http://www.beian.miit.gov.cn/" target="_blank"
+        >鲁ICP备20003930号-1</a
+      >
     </main>
-</body>
-
+  </body>
 </html>
