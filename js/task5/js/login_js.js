@@ -47,10 +47,7 @@ function getForm() {
     xmlhttp.open("POST", "/carrots-admin-ajax/a/login", true);
     var par = "name=" + name + "&pwd=" + pwd;
     // 添加头部信息
-    xmlhttp.setRequestHeader(
-      "Content-type",
-      "application/x-www-form-urlencoded"
-    );
+    xmlhttp.setRequestHeader("Content-type", "Application/json");
     // 发送参数
     xmlhttp.send(par);
     // 参数发送完成后执行函数

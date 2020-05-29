@@ -26,8 +26,8 @@ $(document).ready(function () {
         "/carrots-admin-ajax/a/login",
         {
           //   发送的参数
-          name: JSON.stringify(name),
-          pwd: JSON.stringify(pwd),
+          name: name,
+          pwd: pwd,
         },
         //   回调函数
         function (data) {
